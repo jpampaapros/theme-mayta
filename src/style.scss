@@ -1,0 +1,15 @@
+:root {
+  --width-base: 375
+}
+
+@screen md {
+  :root {
+    --width-base: 1920
+  }
+}
+
+@import './utils/index.scss';
+@import './components/index.scss';
+@import './libs/index.scss';
+@import './partials/index.scss';
+@import './pages/index.scss';

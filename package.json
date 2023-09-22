@@ -1,0 +1,49 @@
+{
+  "name": "wordpress-dev-kit-started",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "zip": "npm run build && node archiver"
+  },
+  "devDependencies": {
+    "@unocss/preset-uno": "^0.53.1",
+    "@unocss/transformer-directives": "^0.53.1",
+    "archiver": "^5.3.1",
+    "autoprefixer": "^10.4.13",
+    "browserslist": "^4.21.9",
+    "lightningcss": "^1.21.0",
+    "sass": "^1.57.1",
+    "typescript": "^4.9.3",
+    "unocss": "^0.53.1",
+    "unocss-preset-autoprefixer": "^0.0.5",
+    "vite": "^4.0.0",
+    "vite-plugin-full-reload": "^1.0.5"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.53.3",
+    "hamburgers": "^1.2.1",
+    "jquery": "^3.7.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ],
+  "files": [
+    "api/**/*",
+    "core/**/*",
+    "dist/**/*",
+    "partials/**/*",
+    "templates/**/*",
+    "public/**/*",
+    "footer.php",
+    "functions.php",
+    "header.php",
+    "style.css"
+  ]
+}
