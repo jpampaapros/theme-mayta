@@ -124,7 +124,7 @@ export default defineConfig({
       white2: '#FFFFFF'
     },
     fontFamily: {
-      'Helvetica': ['Helvetica', 'sans-serif'],
+      'principal': ['GeogrotesqueCyr', 'sans-serif'],
     },
     container: {
       center: true,
