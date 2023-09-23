@@ -6,9 +6,9 @@ $iconos = get_field("icono_redes");
 ?>
 <footer class="container">
 <div class="flex justify-center">
-	<button class="w-260 h-60 text-black flex items-center justify-center bg-orange">
-		<?= $text_btn ?>
-	</button>
+	<a href="<?= $link_btn ?>" class="w-260 h-60 text-black flex items-center justify-center bg-orange">
+	<?= $text_btn ?>
+	</a>
 </div>
 
 		<div class="border-t-1 border-white flex justify-between text-white">
