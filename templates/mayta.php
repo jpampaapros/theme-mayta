@@ -11,8 +11,6 @@ $titulo = get_field("titulo_adicional");
 $subtitulo = get_field("subtitulo_adicional");
 $boton = get_field("boton_texto_adicional");
 $link_boton = get_field("boton_link_adicional");
-
-
 ?>
 <main class="container">
 	<section class="sec-1 flex mt-25 mx-65">
