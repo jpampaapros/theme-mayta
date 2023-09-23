@@ -11,12 +11,12 @@ $iconos = get_field("icono_redes");
 	</a>
 </div>
 
-		<div class="border-t-1 border-white flex justify-between text-white">
-			<span href="#">Copyright 2023</span>
+		<div class="border-t-1 border-white flex justify-between text-white text-14 pt-10">
+			<span href="#" class="no-underline font-normal">Copyright 2023</span>
 			<div class="flex gap-22">
-				<a href="#">Terminos y condiciobes</a>
-				<a href="#">Legales</a>
-				<a href="#">Libro de reclamaciones</a>
+				<a href="#" class="no-underline font-normal">Terminos y condiciobes</a>
+				<a href="#" class="no-underline font-normal">Legales</a>
+				<a href="#" class="no-underline font-normal">Libro de reclamaciones</a>
 			</div>
 		</div>
 	</footer>
