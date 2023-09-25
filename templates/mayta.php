@@ -12,7 +12,7 @@ $subtitulo = get_field("subtitulo_adicional");
 $boton = get_field("boton_texto_adicional");
 $link_boton = get_field("boton_link_adicional");
 ?>
-<main class="container">
+<main class="container py-150">
 	<section class="sec-1 flex mt-25 mx-65 h-720">
 		<div class="w-50% flex justify-end relative">
 			<img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-375 h-457" alt="mayta">
@@ -106,7 +106,7 @@ $link_boton = get_field("boton_link_adicional");
 		} ?>
 	<?php endforeach; ?>
 
-	<section class="sec-3 flex justify-center w-full my-166">
+	<section class="sec-3 flex justify-center w-full mt-166 mb-16">
 
 		<div class="w-auto h-auto relative border-8 border-grey">
 			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
