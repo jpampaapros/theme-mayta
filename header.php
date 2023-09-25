@@ -15,9 +15,8 @@ $logo = get_site_logo(["class" => "site-logo", "alt" => get_bloginfo('name')]);
 <body <?php body_class(); ?> <?php generate_do_microdata('body'); ?>>
 
   <header class="flex justify-between container md:py-36 items-end bg-transparent">
-    <a href="<?php home_url() ?>"><h2>LOGO</h2></a>
+    <a href="<?php home_url() ?>"><h2><img class="h-37" src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\header\cropped-Group-7931.webp" alt="logo"></h2></a>
     
-
     <div class="flex gap-22">
       <?php
       wp_nav_menu(array(
