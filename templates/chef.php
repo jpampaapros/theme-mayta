@@ -9,14 +9,11 @@ $nombre = get_field("nombre_descripcion");
 $posicion = get_field("posicion_descripcion");
 $texto = get_field("texto_descripcion");
 
-$subtitulo = get_field("subtitulo_adicional");
-$boton = get_field("boton_texto_adicional");
-$link_boton = get_field("boton_link_adicional");
 ?>
 <main class="container py-300">
 <section class="sec-1 flex mx-65">
             <div class="w-50% relative">
-				<img src="<?= home_url()?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-783 h-952" alt="">
+				<img src="<?= home_url()?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-783 h-952" alt="mayta">
                 <img src="<?= $imagen['url'] ?>" class="w-705 h-975 absolute top-40 left-100" alt="<?= $imagen['alt'] ?>">
             </div>
             <div class="flex justify-center pl-129 flex-col w-50% pt-100">
