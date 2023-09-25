@@ -1,4 +1,4 @@
-	<footer class="bg-primary">
+	<footer class="bg-coffee">
 		<h2>Footer</h2>
 	</footer>
 
