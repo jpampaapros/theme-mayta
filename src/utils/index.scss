@@ -1,3 +1,7 @@
 *,body{
-    @apply font-main;
+    @apply font-main font-normal;
+}
+
+.wpml-ls-statics-footer{
+    display:none;
 }
