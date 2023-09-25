@@ -31,6 +31,7 @@ class WpDevKit{
   {
     if ($_SERVER["REMOTE_ADDR"] == "127.0.0.1" or $_SERVER["REMOTE_ADDR"] == "localhost") return true;
     return false;
+    
   }
 
   public function get_script(): void
