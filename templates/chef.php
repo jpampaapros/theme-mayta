@@ -11,13 +11,17 @@ $texto = get_field("texto_descripcion");
 $linea_linea = get_field("linea_linea");
 
 ?>
-<main class="container py-150">
-    <section class="sec-1 flex mx-65 mb-250">
-        <div class="w-50% relative">
-            <img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-783 h-952" alt="mayta">
-            <!-- <img src="<?= $imagen['url'] ?>" class="w-705 h-975 absolute top-40 left-120" alt="<?= $imagen['alt'] ?>"> -->
-            <?= render_image($imagen,"w-705 h-975 absolute top-40 left-120") ?>
-
+<main class="container md:pt-150 overflow-hidden">
+    <section class="block md:hidden pt-37">
+        <div class="text-white font-light text-16"><?= $titulo ?></div>
+        <h1 class="font-medium text-white text-44 md:text-75 "><?= $nombre ?></h1>
+        <div class="text-16 md:text-25 font-medium text-white pb-12 md:pb-0"><?= $posicion ?></div>
+        <div class="w-62 h-1 bg-white mb-79"></div>
+    </section>
+    <section class="sec-1 md:flex md:mx-65 mb-84 md:mb-250">
+        <div class="md:w-50% relative">
+            <img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class=" w-783 absolute -left-18" alt="mayta">
+            <?= render_image($imagen,"w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover");?>
         </div>
         <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full">
             <div class="hidden md:block">
