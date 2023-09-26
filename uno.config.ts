@@ -121,7 +121,7 @@ export default defineConfig({
       coffee: '#a65a41',
       coffee2: '#302622',
       black: '#000000',
-      white2: '#FFFFFF'
+      lightblack: '#374141'
     },
     fontFamily: {
       'main': ['GeogrotesqueCyr', 'sans-serif'],
