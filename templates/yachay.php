@@ -41,7 +41,7 @@ $imagen2 = get_field("imagen_adicional");
 		</p>
 	</div>
 	</section>
-	<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5 md:pl-100">
+	<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5 md:pl-70">
 	
 		<?php
 		$llave = 1;
