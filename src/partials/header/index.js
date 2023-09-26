@@ -1,11 +1,13 @@
 import $ from "jquery";
 $(function () {
   $(".hamburger").click(function () {
-    $("#slidemenu").toggleClass("active-menu");
-    $("body").toggleClass("overflow-hidden");
+    $("#slidemenu").removeClass("hidden").addClass("block").animate({ left: 0 }, 800);
+    return false;
   });
-  $(".close-btn").click(function () {
-    $("#slidemenu").toggleClass("active-menu");
-    $("body").toggleClass("overflow-hidden");
+  $(".hamburger2").click(function () {
+    $("#slidemenu").animate({ left: '500px' }, 800, function () {
+      $(this).removeClass("block").addClass("hidden");
+    });
+    return false;
   });
 });

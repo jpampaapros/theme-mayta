@@ -12,17 +12,18 @@ $subtitulo = get_field("subtitulo_adicional");
 $boton = get_field("boton_texto_adicional");
 $link_boton = get_field("boton_link_adicional");
 ?>
-<main class="container py-150">
-	<section class="sec-1 flex mt-25 mx-65 h-720">
-		<div class="w-50% flex justify-end relative">
-			<img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-375 h-457" alt="mayta">
-			<img src="<?= $imagen['url'] ?>" class="md:w-654 md:h-682 absolute top-40 right-70" alt="<?= $imagen['alt'] ?>">
+<main class="container md:py-150 py-50">
+	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-720 h-auto">
+		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
+			<img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="md:w-375 md:h-457 w-165 h-201" alt="mayta">
+			<!-- <img src="<?= $imagen['url'] ?>" class="md:w-654 md:h-682 absolute top-40 right-70" alt="<?= $imagen['alt'] ?>"> -->
+			<?= render_image($imagen,"md:w-654 md:h-682 absolute md:top-40 md:right-70 top-15 right-30 w-300 h-296") ?>
 		</div>
-		<div class="w-50% flex justify-end items-center texto">
+		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220">
 			<?= $texto ?>
 		</div>
 	</section>
-	<section class="flex justify-center pt-158 pb-115">
+	<section class="flex justify-center md:pt-158 pt-115 pb-115">
 		<svg width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="Group 44">
 				<g id="Vector">
@@ -81,21 +82,23 @@ $link_boton = get_field("boton_link_adicional");
 	<?php foreach ($grilla as $item) : ?>
 
 		<?php if ($switch == 1) : ?>
-			<section class="mx-150 flex">
+			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
 				<div class="h-auto w-50% flex justify-center items-center">
-					<img src="<?= $item['imagen']['url'] ?>" class="w-395 h-621" alt="<?= $item['imagen']['alt'] ?>">
+					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
+					<?= render_image($item['imagen'],"md:w-395 md:h-621 w-full h-269") ?>
 				</div>
-				<div class="h-auto w-50% pr-70  flex justify-end items-center text-18 text-white font-light">
+				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-14 text-white font-light">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
 		<?php else : ?>
-			<section class="mx-150 flex">
-				<div class="h-auto w-55% pl-130  flex justify-start items-center text-18 text-white font-light">
+			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
+				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-14 text-white font-light">
 					<?= $item['texto'] ?>
 				</div>
-				<div class="h-auto w-45% flex justify-center items-center">
-					<img src="<?= $item['imagen']['url'] ?>" class="w-395 h-621" alt="<?= $item['imagen']['alt'] ?>">
+				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
+					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
+					<?= render_image($item['imagen'],"md:w-395 md:h-621 w-full h-269") ?>
 				</div>
 			</section>
 		<?php endif; ?>
@@ -108,19 +111,18 @@ $link_boton = get_field("boton_link_adicional");
 
 	<section class="sec-3 flex justify-center w-full mt-166 mb-16">
 
-		<div class="w-auto h-auto relative border-10 border-lightblack">
-			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
+		<div class="w-auto h-auto relative border-15 border-lightblack">
+			<img src="<?= $imagen2['url'] ?>" class="md:w-1095 md:h-395 w-315 h-325" alt="<?= $imagen2['url'] ?>">
 			<div class="absolute top-50 w-full flex items-center flex-col">
-				<div class=" bg-white pt-10  h-auto w-500 text-center  mb-30">
-					<h1 class="text-50 text-black font-bold"><?= $titulo ?></h1>
+				<div class=" bg-white pt-10  h-auto md:w-500 w-auto px-30 text-center  mb-30">
+					<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo ?></h1>
 				</div>
-				<h2 class="text-50 mb-20"><?= $subtitulo ?></h2>
+				<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
 				<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
 					<?= $boton ?>
 				</a>
 			</div>
 		</div>
-
 	</section>
 </main>
 
