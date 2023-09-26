@@ -1,3 +1,33 @@
 .text-chef p{
     @apply mb-20;
 }
+
+.timeline{
+    @apply w-500 md:w-1970;
+
+    .timeline__anio,
+    .timeline__card,
+    .indicator-circle{
+        @apply transition linear duration-300;
+    }
+    
+    .slick-slide{
+        @apply cursor-pointer;
+    }
+
+    & .slick-current{
+
+        .indicator-circle{
+            @apply bg-white;
+        }
+
+        .opacity-50{
+            @apply opacity-100;
+        }
+
+        .indicator-line.bg-lightblack{
+            @apply bg-white;
+        }
+    }
+}
+
