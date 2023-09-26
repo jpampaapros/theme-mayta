@@ -1,4 +1,7 @@
 .sec-1 .texto p{
-@apply text-25 text-white font-normal w-80%;
+@apply text-20 text-white font-normal;
+@screen md{
+    @apply text-30 text-white font-normal w-80%;
+}
 }
 

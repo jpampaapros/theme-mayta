@@ -62,7 +62,7 @@ $logo = get_site_logo(["class" => "site-logo", "alt" => get_bloginfo('name')]);
       </a>
     </div>
   </header>
-  <div id="slidemenu" class="bg-green3 w-100% h-100% hidden">
+  <div id="slidemenu" class="bg-green3 w-100% z-999 h-100% hidden">
     <div class="flex justify-between container items-end bg-transparent py-20 mb-69">
       <a href="<?= home_url() ?>" class="ml--4">
         <img class="h-37 block md:hidden" src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\header\Frame.webp" alt="logo">
