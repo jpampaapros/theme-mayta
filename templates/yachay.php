@@ -69,7 +69,7 @@ $imagen2 = get_field("imagen_adicional");
 		<?php endforeach; ?>
 	</section>
 	<section class=" flex justify-center w-full">
-		<div class="w-auto h-auto relative border-10 color-borde">
+		<div class="w-auto h-auto relative border-10 border-lightblack">
 			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
 			<div class="absolute top-60 w-full flex items-start flex-col pl-30">
 				<h2 class="text-50 mb-20"><?= $subtitulo ?></h2>

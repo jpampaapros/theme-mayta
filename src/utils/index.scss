@@ -2,6 +2,12 @@
     @apply font-main font-normal;
 }
 
+body{
+    // background-color: #436363;
+//     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #436363;
+// background-blend-mode: normal, hard-light, normal;
+}
+
 .wpml-ls-statics-footer{
     display:none;
 }

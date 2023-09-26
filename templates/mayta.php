@@ -108,7 +108,7 @@ $link_boton = get_field("boton_link_adicional");
 
 	<section class="sec-3 flex justify-center w-full mt-166 mb-16">
 
-		<div class="w-auto h-auto relative border-10 color-borde">
+		<div class="w-auto h-auto relative border-10 border-lightblack">
 			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
 			<div class="absolute top-50 w-full flex items-center flex-col">
 				<div class=" bg-white pt-10  h-auto w-500 text-center  mb-30">
