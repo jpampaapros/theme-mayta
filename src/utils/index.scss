@@ -1,3 +1,7 @@
+*, *::before,*::after{
+    box-sizing: border-box;
+}
+
 *,body{
     @apply font-main font-normal;
 }
@@ -10,4 +14,13 @@ body{
 
 .wpml-ls-statics-footer{
     display:none;
+}
+
+.title-before{
+    position: relative;
+
+    &::after{
+        content: "";
+        @apply w-62 md:w-92 h-1 md:h-2 bg-white absolute left-o bottom-0 block;
+    }
 }
