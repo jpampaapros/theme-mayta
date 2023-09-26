@@ -14,9 +14,9 @@ $texto = get_field("texto_descripcion");
     <section class="sec-1 flex mx-65 mb-250">
         <div class="w-50% relative">
             <img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="w-783 h-952" alt="mayta">
-            <img src="<?= $imagen['url'] ?>" class="w-705 h-975 absolute top-40 left-100" alt="<?= $imagen['alt'] ?>">
+            <img src="<?= $imagen['url'] ?>" class="w-705 h-975 absolute top-40 left-120" alt="<?= $imagen['alt'] ?>">
         </div>
-        <div class="flex justify-center pl-129 flex-col w-50% pt-100">
+        <div class="flex justify-center pl-149 flex-col w-50% pt-100">
             <div class="text-white font-light"><?= $titulo ?></div>
             <h1 class="text-75 font-medium text-white"><?= $nombre ?></h1>
             <div class="text-25 font-medium text-white"><?= $posicion ?></div>
