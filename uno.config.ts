@@ -120,6 +120,7 @@ export default defineConfig({
       pink2: '#ffa187',
       coffee: '#a65a41',
       coffee2: '#302622',
+      cyan: '#00CDFE',
       black: '#000000',
       lightblack: '#374141',
       green3: '#436363;'
