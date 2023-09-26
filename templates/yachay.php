@@ -16,19 +16,20 @@ $link_boton = get_field("boton_link_adicional");
 $imagen2 = get_field("imagen_adicional");
 
 ?>
-<main class="container py-150">
+<main class="container md:py-150 py-50">
 	<section class="flex flex-col mb-250">
-		<div class="flex flex-col items-center justify-center mb-56">
-			<div class="w-500 flex flex-col text-center mb-60">
+		<div class="flex flex-col md:items-center justify-center mb-56">
+			<div class="md:w-500 w-auto flex flex-col md:text-center text-left mb-60">
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
-				<div class="h-1 w-60 bg-white ml-220"></div>
+				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
-			<img class="w-1514 h-533" src="<?= $imagen['url'] ?>" alt="<?= $imagen['alt'] ?>">
+			<!-- <img class="md:w-1514 md:h-533 w-358 h-237" src="<?= $imagen['url'] ?>" alt="<?= $imagen['alt'] ?>"> -->
+			<?= render_image($imagen,"md:w-1514 md:h-533 w-358 h-237") ?>
 		</div>
-		<div class="flex justify-between px-55">
-			<div class="flex flex-col w-500">
-				<h2 class="text-75 font-bold text-white"><?= $titulo ?></h2>
-				<h3 class="text-35 text-white"><?= $subtitulo ?></h3>
+		<div class="flex md:justify-between md:flex-row flex-col px-55">
+			<div class="flex flex-col md:w-500 w-auto">
+				<h2 class="md:text-75 text-35 font-bold text-white"><?= $titulo ?></h2>
+				<h3 class="md:text-35 text-25 text-white"><?= $subtitulo ?></h3>
 			</div>
 			<div class="text-18 font-light w-500 flex items-center"><?= $texto ?></div>
 		</div>
@@ -69,7 +70,7 @@ $imagen2 = get_field("imagen_adicional");
 		<?php endforeach; ?>
 	</section>
 	<section class=" flex justify-center w-full">
-		<div class="w-auto h-auto relative border-10 border-lightblack">
+		<div class="w-auto h-auto relative border-15 border-lightblack">
 			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
 			<div class="absolute top-60 w-full flex items-start flex-col pl-30">
 				<h2 class="text-50 mb-20"><?= $subtitulo ?></h2>
