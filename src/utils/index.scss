@@ -7,9 +7,8 @@
 }
 
 body{
-    // background-color: #436363;
-//     background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat, #436363;
-// background-blend-mode: normal, hard-light, normal;
+    @apply text-white bg-black bg-contain;
+    // @apply text-white bg-black border-solid border-3 bg-no-repeat bg-contain bg-top bg-right;
 }
 
 .wpml-ls-statics-footer{
