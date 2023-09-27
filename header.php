@@ -103,7 +103,7 @@ $link_red = get_field("link_red", "option");
       <?php
       wp_nav_menu(array(
         'menu' => 'Principal',
-        'menu_class' => 'flex flex-col items-center justify-center text-24 font-medium gap-24',
+        'menu_class' => 'flex flex-col items-center justify-center text-24 font-medium gap-24 menu-mobile',
       ));
       ?>
     </div>

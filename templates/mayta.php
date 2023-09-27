@@ -118,7 +118,7 @@ $adorno = get_field("adorno");
 					</div>
 					<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white hover:font-600 hover:text-19">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>

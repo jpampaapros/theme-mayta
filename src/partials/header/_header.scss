@@ -4,6 +4,19 @@
   a {
     @apply md:text-18 md:leading-27 font-normal no-underline;
   }
+  a:hover {
+    @apply underline underline-offset-4;
+  }
+  a[aria-current="page"] {
+    @apply md:text-19 font-600 tracking-wider no-underline;
+  }
+
+}
+
+.menu-mobile li{
+  a[aria-current="page"] {
+    @apply text-28 font-600;
+  }
 }
 
 #slidemenu {
