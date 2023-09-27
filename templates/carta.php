@@ -48,16 +48,39 @@ $link_carta = get_field("boton_link_carta");
 				<?php endforeach; ?>
 			</div>
 		</section>
+		<section class="md:hidden block">
+			<div class="flex flex-col justify-center mb-150">
+				<?php
+				$switch = 1;
+				$cardCount = count($cards);
+				foreach ($cards as $key => $item) : ?>
+					<?php if ($switch == $cardCount) : ?>
+						<div class="flex flex-col text-center p-40">
+							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
+							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+						</div>
+					<?php else : ?>
+						<div class="flex flex-col text-center border-b border-white p-40">
+							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
+							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+						</div>
+					<?php endif; ?>
+					<?php $switch++ ?>
+				<?php endforeach; ?>
+			</div>
+		</section>
 	<? endif; ?>
 	<section class="flex justify-center">
 
 		<div class="flex flex-col items-center justify-center py-30 text-white">
-			<div class="w-500">
+			<div class="md:w-500 w-auto">
 				<?= $carta ?>
 			</div>
 			
 			<?php if ($link_carta) : ?>
-				<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20" href="<?= $link_carta ?>"><?= $boton_carta ?></a>
+				<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link_carta ?>"><?= $boton_carta ?></a>
 			<?php endif; ?>
 		</div>
 

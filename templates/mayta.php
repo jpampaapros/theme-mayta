@@ -13,13 +13,20 @@ $boton = get_field("boton_texto_adicional");
 $link_boton = get_field("boton_link_adicional");
 $adorno = get_field("adorno");
 ?>
-<main class="container md:py-150 py-50">
+<main class="container md:py-150 py-50 locomotive-scroll">
 	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-720 h-auto">
 		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
+			<?php 
+				$attr_image = array(
+					"class" => "absolute md:top-40 md:right-70 top-15 right-30 w-300 md:w-654 h-296 md:h-682 objec-cover",
+					"data-scroll-speed" => "4",
+					"data-scroll" => "1"
+				);
+			?>
 			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
-			<?= render_image($imagen, "md:w-654 md:h-682 absolute md:top-40 md:right-70 top-15 right-30 w-300 h-296") ?>
+			<?= render_image($imagen, $attr_image) ?>
 		</div>
-		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220">
+		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220 md:text-left text-right" data-scroll-speed="1" data-scroll="1">
 			<?= $texto ?>
 		</div>
 	</section>
@@ -84,21 +91,33 @@ $adorno = get_field("adorno");
 		<?php if ($switch == 1) : ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
 				<div class="h-auto w-50% flex justify-center items-center">
-					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
-					<?= render_image($item['imagen'], "md:w-395 md:h-621 w-full h-269") ?>
+					<?php 
+						$attr_image = array(
+							"class" => "md:w-395 md:h-621 w-full h-269",
+							"data-scroll-speed" => "4",
+							"data-scroll" => "1"
+							);
+					?>
+					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
-				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-14 text-white font-light">
+				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-14 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
 		<?php else : ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
-				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-14 text-white font-light">
+				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-14 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
-					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
-					<?= render_image($item['imagen'], "md:w-395 md:h-621 w-full h-269") ?>
+					<?php 
+						$attr_image = array(
+							"class" => "md:w-395 md:h-621 w-full h-269",
+							"data-scroll-speed" => "4",
+							"data-scroll" => "1"
+						);
+					?>
+					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
 			</section>
 		<?php endif; ?>
@@ -118,7 +137,7 @@ $adorno = get_field("adorno");
 					</div>
 					<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>

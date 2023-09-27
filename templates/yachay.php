@@ -26,16 +26,16 @@ $imagen2 = get_field("imagen_adicional");
 			<!-- <img class="md:w-1514 md:h-533 w-358 h-237" src="<?= $imagen['url'] ?>" alt="<?= $imagen['alt'] ?>"> -->
 			<?= render_image($imagen, "md:w-1514 md:h-533 w-auto h-237") ?>
 		</div>
-		<div class="flex md:justify-between md:flex-row flex-col md:px-150">
+		<div class="flex md:justify-center text-center md:flex-row flex-col md:px-150">
 			<div class="flex flex-col md:w-500 w-auto md:text-left text-right mb-30">
-				<h2 class="md:text-75 text-35 font-bold text-white"><?= $titulo ?></h2>
-				<h3 class="md:text-35 text-25 text-white"><?= $subtitulo ?></h3>
+				<h2 class="md:text-75 text-35 font-bold text-white text-center"><?= $titulo ?></h2>
+				<h3 class="md:text-35 text-25 text-white text-center"><?= $subtitulo ?></h3>
 			</div>
-			<div class="md:text-18 text-16 font-light md:w-500 w-auto flex items-center"><?= $texto ?></div>
+			<!-- <div class="md:text-18 text-16 font-light md:w-500 w-auto flex items-center"><?= $texto ?></div> -->
 		</div>
 	</section>
 	<section class="md:hidden block mb-90">
-		<div class="w-full ">
+		<div class="w-full">
 			<p class="text-white font-600 text-16 leading-24">
 				Evolucionar gastronómicamente implica entender el origen de los insumos y su entorno, es por ello que constantemente imaginamos cómo podríamos trasladar la misma sensación a nuestros comensales conectándolos con nuestro territorio, tradición y cultura.”
 			</p>
@@ -96,7 +96,7 @@ $imagen2 = get_field("imagen_adicional");
 						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo2 ?></h1>
 					</div>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>
