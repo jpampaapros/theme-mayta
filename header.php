@@ -18,7 +18,7 @@ $icono_red = get_field("icono_red", "option");
 $link_red = get_field("link_red", "option");
 ?>
 
-<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/bg2-2.webp)">
+<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
 
   <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
