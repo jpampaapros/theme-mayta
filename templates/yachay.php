@@ -96,7 +96,7 @@ $imagen2 = get_field("imagen_adicional");
 						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo2 ?></h1>
 					</div>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>
