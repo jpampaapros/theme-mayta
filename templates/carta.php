@@ -24,27 +24,29 @@ $link_carta = get_field("boton_link_carta");
 		<!-- <img class="w-713 h-629 ml-220" src="<?= $imagen['url'] ?> " alt="<?= $imagen['alt'] ?>"> -->
 		<?= render_image($imagen, "md:w-713 md:h-629 md:ml-220 w-307 h-335 ml-20") ?>
 	</section>
-	<section class="hidden md:block">
-		<div class="flex justify-center mb-150">
-			<?php
-			$switch = 1;
-			$cardCount = count($cards);
-			foreach ($cards as $item) : ?>
-				<?php if ($switch == $cardCount) : ?>
-					<div class="flex flex-col text-center p-40">
-						<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-						<a href=""> VER MARIDAJE</a>
-					</div>
-				<?php else : ?>
-					<div class="flex flex-col text-center border-e border-white p-40">
-						<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-						<a class="text-22" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
-					</div>
-				<?php endif; ?>
-				<?php $switch++ ?>
-			<?php endforeach; ?>
-		</div>
-	</section>
+	<?php if ($cards) : ?>
+		<section class="hidden md:block">
+			<div class="flex justify-center mb-150">
+				<?php
+				$switch = 1;
+				$cardCount = count($cards);
+				foreach ($cards as $item) : ?>
+					<?php if ($switch == $cardCount) : ?>
+						<div class="flex flex-col text-center p-40">
+							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
+							<a href=""> VER MARIDAJE</a>
+						</div>
+					<?php else : ?>
+						<div class="flex flex-col text-center border-e border-white p-40">
+							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
+							<a class="text-22" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+						</div>
+					<?php endif; ?>
+					<?php $switch++ ?>
+				<?php endforeach; ?>
+			</div>
+		</section>
+	<? endif; ?>
 	<section class="flex justify-center">
 		<div class="flex flex-col items-center justify-center py-30 text-white">
 			<?= $carta ?>

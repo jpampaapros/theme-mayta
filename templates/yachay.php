@@ -24,7 +24,7 @@ $imagen2 = get_field("imagen_adicional");
 				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
 			<!-- <img class="md:w-1514 md:h-533 w-358 h-237" src="<?= $imagen['url'] ?>" alt="<?= $imagen['alt'] ?>"> -->
-			<?= render_image($imagen,"md:w-1514 md:h-533 w-auto h-237") ?>
+			<?= render_image($imagen, "md:w-1514 md:h-533 w-auto h-237") ?>
 		</div>
 		<div class="flex md:justify-between md:flex-row flex-col md:px-150">
 			<div class="flex flex-col md:w-500 w-auto md:text-left text-right mb-30">
@@ -36,53 +36,60 @@ $imagen2 = get_field("imagen_adicional");
 	</section>
 	<section class="md:hidden block mb-90">
 		<div class="w-full ">
-		<p class="text-white font-600 text-16 leading-24">
-		Evolucionar gastronómicamente implica entender el origen de los insumos y su entorno, es por ello que constantemente imaginamos cómo podríamos trasladar la misma sensación a nuestros comensales conectándolos con nuestro territorio, tradición y cultura.”
-		</p>
-	</div>
+			<p class="text-white font-600 text-16 leading-24">
+				Evolucionar gastronómicamente implica entender el origen de los insumos y su entorno, es por ello que constantemente imaginamos cómo podríamos trasladar la misma sensación a nuestros comensales conectándolos con nuestro territorio, tradición y cultura.”
+			</p>
+		</div>
 	</section>
-	<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5 md:pl-70">
-	
-		<?php
-		$llave = 1;
-		foreach ($cards as $card) : ?>
-			<?php if ($llave % 2 !== 0) : ?>
-				<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-				<?= render_image($card,"md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0 ml--8") ?>
-			<?php else : ?>
-				<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-				<?= render_image($card,"md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-142 md:mt-0 mt--60") ?>
-			<?php endif ?>
-			<?php $llave++; ?>
-		<?php endforeach; ?>
+	<?php if ($cards) : ?>
+		<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5 md:pl-70">
 
-	</section>
-	<section class="mb-150">
-		<?php foreach ($grilla as $key => $item) : ?>
-			<?php if ($key % 2 !== 0) : ?>
-				<div class="flex md:flex-row flex-col-reverse mb-130 relative">
-					<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130">
-						<?= $item['texto'] ?>
+			<?php
+			$llave = 1;
+			foreach ($cards as $card) : ?>
+				<?php if ($llave % 2 !== 0) : ?>
+					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0 ml--8") ?>
+				<?php else : ?>
+					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-142 md:mt-0 mt--60") ?>
+				<?php endif ?>
+				<?php $llave++; ?>
+			<?php endforeach; ?>
+
+		</section>
+	<?php endif; ?>
+	<?php if ($grilla) : ?>
+		<section class="mb-150">
+			<?php foreach ($grilla as $key => $item) : ?>
+				<?php if ($key % 2 !== 0) : ?>
+					<div class="flex md:flex-row flex-col-reverse mb-130 relative">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130">
+							<?= $item['texto'] ?>
+						</div>
+						<div class="md:w-50% w-full md:flex md:justify-end">
+							<!-- <img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>"> -->
+							<?= render_image($item['imagen'], "md:w-728 md:h-548 w-323 h-auto") ?>
+						</div>
 					</div>
-					<div class="md:w-50% w-full md:flex md:justify-end">
-						<img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>">
+				<?php else : ?>
+					<div class="flex md:flex-row flex-col mb-130 relative">
+						<div class="md:w-50% w-full">
+							<!-- <img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>"> -->
+							<?= render_image($item['imagen'], "md:w-728 md:h-548 w-323 h-auto") ?>
+						</div>
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130">
+							<?= $item['texto'] ?>
+						</div>
 					</div>
-				</div>
-			<?php else : ?>
-				<div class="flex md:flex-row flex-col mb-130 relative">
-					<div class="md:w-50% w-full">
-						<img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>">
-					</div>
-					<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130">
-						<?= $item['texto'] ?>
-					</div>
-				</div>
-			<?php endif; ?>
-		<?php endforeach; ?>
-	</section>
+				<?php endif; ?>
+			<?php endforeach; ?>
+		</section>
+	<?php endif; ?>
 	<section class="md:py-0 pt-100 flex justify-center w-full">
 		<div class="w-auto h-auto relative border-15 border-lightblack">
-			<img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>">
+			<!-- <img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>"> -->
+			<?= render_image($imagen2, "w-1095 h-395") ?>
 			<div class="absolute top-60 w-full flex md:items-start items-center flex-col md:pl-30 pl-10 pr-10 md:pr-0">
 				<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
 				<div class=" bg-white pt-10  h-auto w-auto text-center px-15 mb-35 mix-blend-screen">

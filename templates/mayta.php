@@ -17,7 +17,7 @@ $link_boton = get_field("boton_link_adicional");
 		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
 			<img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="md:w-375 md:h-457 w-165 h-201" alt="mayta">
 			<!-- <img src="<?= $imagen['url'] ?>" class="md:w-654 md:h-682 absolute top-40 right-70" alt="<?= $imagen['alt'] ?>"> -->
-			<?= render_image($imagen,"md:w-654 md:h-682 absolute md:top-40 md:right-70 top-15 right-30 w-300 h-296") ?>
+			<?= render_image($imagen, "md:w-654 md:h-682 absolute md:top-40 md:right-70 top-15 right-30 w-300 h-296") ?>
 		</div>
 		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220">
 			<?= $texto ?>
@@ -85,7 +85,7 @@ $link_boton = get_field("boton_link_adicional");
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
 				<div class="h-auto w-50% flex justify-center items-center">
 					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
-					<?= render_image($item['imagen'],"md:w-395 md:h-621 w-full h-269") ?>
+					<?= render_image($item['imagen'], "md:w-395 md:h-621 w-full h-269") ?>
 				</div>
 				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-14 text-white font-light">
 					<?= $item['texto'] ?>
@@ -98,7 +98,7 @@ $link_boton = get_field("boton_link_adicional");
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
 					<!-- <img src="<?= $item['imagen']['url'] ?>" class="md:w-395 md:h-621 w-full h-269" alt="<?= $item['imagen']['alt'] ?>"> -->
-					<?= render_image($item['imagen'],"md:w-395 md:h-621 w-full h-269") ?>
+					<?= render_image($item['imagen'], "md:w-395 md:h-621 w-full h-269") ?>
 				</div>
 			</section>
 		<?php endif; ?>
