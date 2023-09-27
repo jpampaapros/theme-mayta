@@ -86,22 +86,24 @@ $imagen2 = get_field("imagen_adicional");
 			<?php endforeach; ?>
 		</section>
 	<?php endif; ?>
-	<section class="md:py-0 pt-100 flex justify-center w-full">
-		<div class="w-auto h-auto relative border-15 border-lightblack">
-			<!-- <img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>"> -->
-			<?= render_image($imagen2, "w-1095 h-395") ?>
-			<div class="absolute top-60 w-full flex md:items-start items-center flex-col md:pl-30 pl-10 pr-10 md:pr-0">
-				<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
-				<div class=" bg-white pt-10  h-auto w-auto text-center px-15 mb-35 mix-blend-screen">
-					<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo2 ?></h1>
+	<?php if ($imagen2) : ?>
+		<section class="md:py-0 pt-100 flex justify-center w-full">
+		<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
+				<!-- <img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>"> -->
+				<div class="absolute top-60 w-full flex md:items-start items-center flex-col md:pl-30 pl-10 pr-10 md:pr-0">
+					<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
+					<div class=" bg-white pt-10  h-auto w-auto text-center px-15 mb-35 mix-blend-screen">
+						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo2 ?></h1>
+					</div>
+					<?php if ($link_boton) : ?>
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
+							<?= $boton ?>
+						</a>
+					<?php endif; ?>
 				</div>
-				<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 md:px-100 px-70 bg-gray text-18 font-medium border border-white">
-					<?= $boton ?>
-				</a>
 			</div>
-		</div>
-
-	</section>
+		</section>
+	<?php endif; ?>
 </main>
 
 <?php

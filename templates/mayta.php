@@ -108,22 +108,24 @@ $link_boton = get_field("boton_link_adicional");
 			$switch = 1;
 		} ?>
 	<?php endforeach; ?>
-
-	<section class="sec-3 flex justify-center w-full mt-166 mb-16">
-
-		<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
-			<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
-			<div class="absolute top-50 w-full flex items-center flex-col">
-				<div class=" bg-white pt-10  h-auto md:w-500 w-auto px-30 text-center  mb-30 mix-blend-screen">
-					<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo ?></h1>
+	<?php if ($imagen2) : ?>
+		<section class="sec-3 flex justify-center w-full mt-166 mb-16">
+			<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
+				<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
+				<div class="absolute top-50 w-full flex items-center flex-col">
+					<div class=" bg-white pt-10  h-auto md:w-500 w-auto px-30 text-center  mb-30 mix-blend-screen">
+						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo ?></h1>
+					</div>
+					<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
+					<?php if ($link_boton) : ?>
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
+							<?= $boton ?>
+						</a>
+					<?php endif; ?>
 				</div>
-				<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
-				<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 bg-gray text-18 font-medium border border-white">
-					<?= $boton ?>
-				</a>
 			</div>
-		</div>
-	</section>
+		</section>
+	<?php endif; ?>
 </main>
 
 <?php
