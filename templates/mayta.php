@@ -11,12 +11,12 @@ $titulo = get_field("titulo_adicional");
 $subtitulo = get_field("subtitulo_adicional");
 $boton = get_field("boton_texto_adicional");
 $link_boton = get_field("boton_link_adicional");
+$adorno = get_field("adorno");
 ?>
 <main class="container md:py-150 py-50">
 	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-720 h-auto">
 		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
-			<img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class="md:w-375 md:h-457 w-165 h-201" alt="mayta">
-			<!-- <img src="<?= $imagen['url'] ?>" class="md:w-654 md:h-682 absolute top-40 right-70" alt="<?= $imagen['alt'] ?>"> -->
+			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
 			<?= render_image($imagen, "md:w-654 md:h-682 absolute md:top-40 md:right-70 top-15 right-30 w-300 h-296") ?>
 		</div>
 		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220">

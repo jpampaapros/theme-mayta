@@ -9,7 +9,7 @@ $nombre = get_field("nombre_descripcion");
 $posicion = get_field("posicion_descripcion");
 $texto = get_field("texto_descripcion");
 $linea_linea = get_field("linea_linea");
-
+$adorno = get_field("adorno");
 ?>
 <main class="container md:pt-150 overflow-hidden">
     <section class="block md:hidden pt-37">
@@ -20,7 +20,7 @@ $linea_linea = get_field("linea_linea");
     </section>
     <section class="sec-1 md:flex md:mx-65 mb-84 md:mb-250">
         <div class="md:w-50% relative">
-            <img src="<?= home_url() ?>/wp-content\themes\theme-mayta\public\image\chef\Frame.png" class=" w-783 absolute -left-18" alt="mayta">
+            <?= render_image($adorno," w-783 absolute -left-18");?>
             <?= render_image($imagen,"w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover");?>
         </div>
         <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full">

@@ -10,7 +10,7 @@ $menu_web = count($menu_locations) > 0 ? $menu_locations["primary"] : null;
 ?>
 <footer class="container mt-71 md:pt-136 relative">
 <?php if($iconos): ?>
-	<img src="<? $iconos['url']?>" class="absolute top-200 right-200 w-60 h-auto md:block hidden" alt="<? $iconos['alt']?>">
+	<?= render_image($iconos,"absolute top-200 right-200 w-60 h-auto md:block hidden");?>
 <?php endif; ?>
 	<div class="flex justify-center mb-70 md:mb-89">
 		<a href="<?= $link_btn ?>" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
@@ -27,7 +27,7 @@ $menu_web = count($menu_locations) > 0 ? $menu_locations["primary"] : null;
 		?>
 	</div>
 	<?php if($redes):?>
-		<div class="mb-120 hidden md:block bg-white">
+		<div class="mb-120 hidden md:block">
 			<div class="flex justify-center items-center">
 				<?php foreach ($redes as $item): ?>
 					<?php
