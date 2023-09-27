@@ -16,9 +16,12 @@ $text_btn = get_field("boton_reservar", "option");
 $link_btn = get_field("link_boton_reservar", "option");
 $icono_red = get_field("icono_red", "option");
 $link_red = get_field("link_red", "option");
+$text_btn_r = get_field("boton_texto_reservar", "option");
+$link_btn_r = get_field("boton_link_reservar", "option");
+$urlActual = $_SERVER['REQUEST_URI'];
 ?>
 
-<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/bg2-2.webp)">
+<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg2-2.webp)">
 
   <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
@@ -44,12 +47,21 @@ $link_red = get_field("link_red", "option");
           </g>
         </svg></a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden"></div>
+      <div class="w-auto h-50">
+        <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
+          <option value="es" selected>ES</option>
+          <option value="en">EN</option>
 
-      <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
-        <option value="es" selected>ES</option>
-        <option value="en">EN</option>
+        </select>
+      </div>
+      <?php if ($urlActual == '/') : ?>
+        <div class="md:block hidden ml-10">
+          <a href="<?= $link_btn_r ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+            <?= $text_btn_r ?>
+          </a>
+        </div>
+      <?php endif; ?>
 
-      </select>
       <div class="h-30 w-1 bg-white mx-10 mr-0 block md:hidden"></div>
 
       <a href="#" class="w-32 h-32 block md:hidden hamburger">
@@ -114,10 +126,10 @@ $link_red = get_field("link_red", "option");
         </a>
       <?php endif; ?>
       <?php if ($link_red) : ?>
-      <a href="<?= $link_red ?>" class="w-20 h-20 block md:hidden">
-      <?= $icono_red ?>
-      </a>
-        <?php endif; ?>
+        <a href="<?= $link_red ?>" class="w-20 h-20 block md:hidden">
+          <?= $icono_red ?>
+        </a>
+      <?php endif; ?>
     </div>
 
   </div>

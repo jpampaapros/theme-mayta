@@ -48,12 +48,17 @@ $link_carta = get_field("boton_link_carta");
 		</section>
 	<? endif; ?>
 	<section class="flex justify-center">
-		<?php if($link_carta): ?>
+
 		<div class="flex flex-col items-center justify-center py-30 text-white">
-			<?= $carta ?>
-			<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20" href="<?= $link_carta ?>"><?= $boton_carta ?></a>
+			<div class="w-500">
+				<?= $carta ?>
+			</div>
+			
+			<?php if ($link_carta) : ?>
+				<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20" href="<?= $link_carta ?>"><?= $boton_carta ?></a>
+			<?php endif; ?>
 		</div>
-		<?php endif; ?>
+
 	</section>
 
 </main>
