@@ -27,7 +27,7 @@ $menu_web = count($menu_locations) > 0 ? $menu_locations["primary"] : null;
 		?>
 	</div>
 	<?php if($redes):?>
-		<div class="mb-120 hidden md:block bg-white">
+		<div class="mb-120 hidden md:block">
 			<div class="flex justify-center items-center">
 				<?php foreach ($redes as $item): ?>
 					<?php
