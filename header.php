@@ -21,7 +21,7 @@ $link_btn_r = get_field("boton_link_reservar", "option");
 $urlActual = $_SERVER['REQUEST_URI'];
 ?>
 
-<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg2-2.webp)">
+<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
 
   <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
@@ -30,7 +30,7 @@ $urlActual = $_SERVER['REQUEST_URI'];
     <a href="<?= home_url() ?>" class="ml--4 block md:hidden">
       <?= render_image($logo_mobile, "h-37 w-auto block md:hidden"); ?>
     </a>
-    <div class="flex md:gap-22 gap-5">
+    <div class="flex md:gap-22 gap-5 ">
       <div class="md:block hidden">
         <?php
         wp_nav_menu(array(

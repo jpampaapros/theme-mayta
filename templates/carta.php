@@ -30,16 +30,18 @@ $link_carta = get_field("boton_link_carta");
 				<?php
 				$switch = 1;
 				$cardCount = count($cards);
-				foreach ($cards as $item) : ?>
+				foreach ($cards as $key => $item) : ?>
 					<?php if ($switch == $cardCount) : ?>
 						<div class="flex flex-col text-center p-40">
 							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php else : ?>
 						<div class="flex flex-col text-center border-e border-white p-40">
 							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
+							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php endif; ?>
 					<?php $switch++ ?>

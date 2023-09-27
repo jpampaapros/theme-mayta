@@ -3,6 +3,7 @@
 	get_header();
 
 	$imagen_contacto = get_field("imagen_contacto");
+	$imagen_movil_contacto = get_field("imagen_movil_contacto");
 	$titulo_contacto = get_field("titulo_contacto");
 	$titulo_horarios = get_field("titulo_horarios");
 	$horarios = get_field("horarios");
@@ -18,7 +19,8 @@
 <main>
 	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
 		<section class="md:w-483 shrink-0">
-			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0");?>	
+			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0 hidden md:block");?>	
+			<?= render_image($imagen_movil_contacto,"w-full mb-50 md:mb-0 md:hidden");?>	
 		</section>
 		<section class="w-full">
 
@@ -104,14 +106,14 @@
 			<div class="flex gap-36">
 
 				<?php if($link_waze_encuentranos):?>
-					<a class="text-center w-full bg-cyan text-black font-semibold p-14 text-16 leading-24 flex justify-center items-center gap-10 hover:text-black" href="<?= $link_waze_encuentranos;?>">
+					<a class="text-center w-full bg-cyan text-black font-semibold p-14 text-16 leading-24 flex justify-center items-center gap-10 hover:text-black" target="_blank" rel="nooponer" href="<?= $link_waze_encuentranos;?>">
 						<?= get_icon("waze","w-32");?>
 						Waze
 					</a>
 				<?php endif;?>
 
 				<?php if($link_google_encuentranos):?>
-					<a class="text-center w-full bg-white text-black font-semibold p-14 text-16 leading-24 flex justify-center items-center gap-10 hover:text-black" href="<?= $link_google_encuentranos;?>">
+					<a class="text-center w-full bg-white text-black font-semibold p-14 text-16 leading-24 flex justify-center items-center gap-10 hover:text-black" target="_blank" rel="nooponer" href="<?= $link_google_encuentranos;?>">
 						<?= get_icon("google-maps","w-21");?>
 						Google Maps
 					</a>
