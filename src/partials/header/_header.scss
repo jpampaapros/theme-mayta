@@ -15,7 +15,7 @@
 
 .menu-mobile li{
   a[aria-current="page"] {
-    @apply text-28 font-600;
+    @apply text-28 font-600 tracking-wider;
   }
 }
 
