@@ -3,6 +3,7 @@
 	get_header();
 
 	$imagen_contacto = get_field("imagen_contacto");
+	$imagen_movil_contacto = get_field("imagen_movil_contacto");
 	$titulo_contacto = get_field("titulo_contacto");
 	$titulo_horarios = get_field("titulo_horarios");
 	$horarios = get_field("horarios");
@@ -18,7 +19,8 @@
 <main>
 	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
 		<section class="md:w-483 shrink-0">
-			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0");?>	
+			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0 hidden md:block");?>	
+			<?= render_image($imagen_movil_contacto,"w-full mb-50 md:mb-0 md:hidden");?>	
 		</section>
 		<section class="w-full">
 
