@@ -43,7 +43,7 @@ $urlActual = get_permalink();
       <?= $icono_red ?>
       </a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden"></div>
-      <div class="w-auto h-50">
+      <div class="w-auto md:h-50">
         <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
           <option value="es" selected>ES</option>
           <option value="en">EN</option>
