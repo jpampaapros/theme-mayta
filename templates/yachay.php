@@ -46,7 +46,7 @@ $imagen2 = get_field("imagen_adicional");
 			<?php foreach ($grilla as $key => $item) : ?>
 				<?php if ($key % 2 !== 0) : ?>
 					<div class="flex md:flex-row flex-col-reverse mb-130 relative">
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130" data-scroll-speed="1" data-scroll="1">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 text-left md:pl-130" data-scroll-speed="1" data-scroll="1">
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
@@ -72,7 +72,7 @@ $imagen2 = get_field("imagen_adicional");
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130" data-scroll-speed="1" data-scroll="1">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130 text-left" data-scroll-speed="1" data-scroll="1">
 							<?= $item['texto'] ?>
 						</div>
 					</div>
@@ -103,7 +103,7 @@ $imagen2 = get_field("imagen_adicional");
 			<?php foreach ($grilla2 as $key => $item) : ?>
 				<?php if ($key % 2 == 0) : ?>
 					<div class="flex md:flex-row flex-col-reverse mb-130 relative">
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 text-left md:pl-130">
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
@@ -117,7 +117,7 @@ $imagen2 = get_field("imagen_adicional");
 							<!-- <img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>"> -->
 							<?= render_image($item['imagen'], "md:w-728 md:h-548 w-323 h-auto") ?>
 						</div>
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130 text-left">
 							<?= $item['texto'] ?>
 						</div>
 					</div>
