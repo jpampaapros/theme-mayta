@@ -18,7 +18,7 @@ $icono_red = get_field("icono_red", "option");
 $link_red = get_field("link_red", "option");
 $text_btn_r = get_field("boton_texto_reservar", "option");
 $link_btn_r = get_field("boton_link_reservar", "option");
-$urlActual = $_SERVER['REQUEST_URI'];
+$urlActual = get_permalink();
 ?>
 
 <body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
@@ -50,12 +50,12 @@ $urlActual = $_SERVER['REQUEST_URI'];
 
         </select>
       </div>
-      <?php if ($urlActual == '/') : ?>
-        <div class="md:block hidden ml-10">
-          <a href="<?= $link_btn_r ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+      <?php if ($urlActual == home_url('/')) : ?>
+
+          <a href="<?= $link_btn_r ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
             <?= $text_btn_r ?>
           </a>
-        </div>
+
       <?php endif; ?>
 
       <div class="h-30 w-1 bg-white mx-10 mr-0 block md:hidden"></div>
