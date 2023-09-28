@@ -18,7 +18,7 @@ $icono_red = get_field("icono_red", "option");
 $link_red = get_field("link_red", "option");
 $text_btn_r = get_field("boton_texto_reservar", "option");
 $link_btn_r = get_field("boton_link_reservar", "option");
-$wordpress_url = get_bloginfo('url');
+$urlActual = home_url($_SERVER['REQUEST_URI']);
 ?>
 
 <body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
@@ -50,7 +50,7 @@ $wordpress_url = get_bloginfo('url');
 
         </select>
       </div>
-      <?php if ($wordpress_url == home_url()) : ?>
+      <?php if ($urlActual == home_url()) : ?>
 
           <a href="<?= $link_btn_r ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
             <?= $text_btn_r ?>
