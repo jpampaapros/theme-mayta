@@ -18,7 +18,7 @@ $imagen2 = get_field("imagen_adicional");
 
 ?>
 <main class="container md:mt-150 mt-50">
-	<section class=" flex flex-col md:mb-250 mb-90">
+	<section class=" flex flex-col md:mb-90 mb-90">
 		<div class="flex flex-col md:items-center justify-center md:mb-56 mb-30">
 			<div data-scroll-speed="1" data-scroll="1" class="md:w-500 w-auto flex flex-col md:text-center text-left mb-60">
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
