@@ -19,10 +19,24 @@
 <main class="md:mt-150 mt-50">
 	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
 		<section class="md:w-483 shrink-0">
-			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0 hidden md:block");?>	
-			<?= render_image($imagen_movil_contacto,"w-full mb-50 md:mb-0 md:hidden");?>	
+			<?php 
+				$attr_image = array(
+					"class" => "w-full mb-50 md:mb-0 hidden md:block",
+					"data-scroll-speed" => "4",
+					"data-scroll" => "1"
+				);
+			?>
+			<?php 
+				$attr_image2 = array(
+					"class" => "w-full mb-50 md:mb-0 md:hidden",
+					"data-scroll-speed" => "4",
+					"data-scroll" => "1"
+				);
+			?>
+			<?= render_image($imagen_contacto,$attr_image);?>	
+			<?= render_image($imagen_movil_contacto,$attr_image2);?>	
 		</section>
-		<section class="w-full">
+		<section class="w-full" data-scroll-speed="1" data-scroll="1">
 
 			<?php if($titulo_contacto):?>
 				<h2 class="text-44 md:text-75 leading-60 md:leading-90 title-before pb-14 md:pb-22 font-medium mb-38 md:mb-78"><?= $titulo_contacto;?></h2>
