@@ -20,15 +20,21 @@ $imagen2 = get_field("imagen_adicional");
 <main class="container md:mt-150 mt-50">
 	<section class=" flex flex-col md:mb-250 mb-90">
 		<div class="flex flex-col md:items-center justify-center md:mb-56 mb-30">
-			<div class="md:w-500 w-auto flex flex-col md:text-center text-left mb-60">
+			<div data-scroll-speed="1" data-scroll="1" class="md:w-500 w-auto flex flex-col md:text-center text-left mb-60">
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
 				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
-			<!-- <img class="md:w-1514 md:h-533 w-358 h-237" src="<?= $imagen['url'] ?>" alt="<?= $imagen['alt'] ?>"> -->
-			<?= render_image($imagen, "md:w-1514 md:h-533 w-auto h-237") ?>
+			<?php 
+				$attr_image = array(
+					"class" => "md:w-1514 md:h-533 w-auto h-237",
+					"data-scroll-speed" => "4",
+					"data-scroll" => "1"
+				);
+			?>
+			<?= render_image($imagen, $attr_image) ?>
 		</div>
 		<div class="flex md:justify-center text-center md:flex-row flex-col md:px-150">
-			<div class="flex flex-col md:w-500 w-auto md:text-left text-right mb-30">
+			<div class="flex flex-col md:w-500 w-auto md:text-left text-right mb-30" data-scroll-speed="1" data-scroll="1">
 				<h2 class="md:text-75 text-35 font-bold text-white text-center"><?= $titulo ?></h2>
 				<h3 class="md:text-35 text-25 text-white text-center"><?= $subtitulo ?></h3>
 			</div>
@@ -40,21 +46,33 @@ $imagen2 = get_field("imagen_adicional");
 			<?php foreach ($grilla as $key => $item) : ?>
 				<?php if ($key % 2 !== 0) : ?>
 					<div class="flex md:flex-row flex-col-reverse mb-130 relative">
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:text-left text-right md:pl-130" data-scroll-speed="1" data-scroll="1">
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
-							<!-- <img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>"> -->
-							<?= render_image($item['imagen'], "md:w-728 md:h-548 w-323 h-auto") ?>
+							<?php 
+								$attr_image = array(
+									"class" => "md:w-728 md:h-548 w-323 h-auto",
+									"data-scroll-speed" => "4",
+									"data-scroll" => "1"
+								);
+							?>
+							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
 					</div>
 				<?php else : ?>
 					<div class="flex md:flex-row flex-col mb-130 relative">
 						<div class="md:w-50% w-full">
-							<!-- <img class="md:w-728 md:h-548 w-323 h-auto" src="<?= $item['imagen']['url'] ?>" alt="<?= $item['imagen']['alt'] ?>"> -->
-							<?= render_image($item['imagen'], "md:w-728 md:h-548 w-323 h-auto") ?>
+							<?php 
+								$attr_image = array(
+									"class" => "md:w-728 md:h-548 w-323 h-auto",
+									"data-scroll-speed" => "4",
+									"data-scroll" => "1"
+								);
+							?>
+							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
-						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130">
+						<div class="md:w-50% w-full md:text-36 text-16 font-midium text-white flex items-center md:static absolute top-190 md:pr-130" data-scroll-speed="1" data-scroll="1">
 							<?= $item['texto'] ?>
 						</div>
 					</div>
