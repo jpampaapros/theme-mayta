@@ -26,11 +26,11 @@ $adorno = get_field("adorno");
 			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
-		<div class="md:w-50% flex justify-end items-center texto md:h-auto h-220 md:text-left text-right" data-scroll-speed="1" data-scroll="1">
+		<div class="md:w-50% flex justify-end items-center texto md:h-auto md:text-left text-right mt-49 md:mt-0" data-scroll-speed="1" data-scroll="1">
 			<?= $texto ?>
 		</div>
 	</section>
-	<section class="flex justify-center md:pt-158 pt-115 pb-115">
+	<section class="flex justify-center md:pt-158 pt-72 pb-72 md:pb-115">
 		<svg width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="Group 44">
 				<g id="Vector">
@@ -89,30 +89,30 @@ $adorno = get_field("adorno");
 	<?php foreach ($grilla as $item) : ?>
 
 		<?php if ($switch == 1) : ?>
-			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
+			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
 				<div class="h-auto w-50% flex justify-center items-center">
 					<?php 
 						$attr_image = array(
-							"class" => "md:w-395 md:h-621 w-full h-269",
+							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
 							"data-scroll-speed" => "4",
 							"data-scroll" => "1"
 							);
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
-				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-14 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
+				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
 		<?php else : ?>
-			<section class="md:mx-150 flex md:flex-row flex-row-reverse">
-				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-14 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
+			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
+				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
 					<?php 
 						$attr_image = array(
-							"class" => "md:w-395 md:h-621 w-full h-269",
+							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
 							"data-scroll-speed" => "4",
 							"data-scroll" => "1"
 						);
@@ -132,10 +132,10 @@ $adorno = get_field("adorno");
 			<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
 				<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
 				<div class="absolute top-50 w-full flex items-center flex-col">
-					<div class=" bg-white pt-10  h-auto md:w-500 w-auto px-30 text-center  mb-30 mix-blend-screen">
+					<div class="inline-block bg-white py-3 md:py-7  h-auto w-auto px-10 md:px-16 text-center  mb-30 mix-blend-screen">
 						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo ?></h1>
 					</div>
-					<h2 class="md:text-50 text-27 mb-20"><?= $subtitulo ?></h2>
+					<h2 class="md:text-50 text-25 mb-20 text-center"><?= $subtitulo ?></h2>
 					<?php if ($link_boton) : ?>
 						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
