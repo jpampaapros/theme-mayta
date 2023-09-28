@@ -133,7 +133,6 @@ $urlActual = get_permalink();
 <?php
 wp_footer();
 ?>
-
 </body>
-
+</div>
 </html>
