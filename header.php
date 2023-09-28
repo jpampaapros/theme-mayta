@@ -20,8 +20,12 @@ $text_btn_r = get_field("boton_texto_reservar", "option");
 $link_btn_r = get_field("boton_link_reservar", "option");
 $urlActual = get_permalink();
 ?>
-
-<body <?php body_class(); ?> <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
+<!-- locomotive-scroll -->
+<?php 
+  $body_classes = get_body_class();
+  $body_classes = implode(" ",$body_classes);
+?>
+<body class="<?php echo $body_classes;?> locomotive-scroll overflow-y-hidden" <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)" data-scroll-container>
 
   <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
