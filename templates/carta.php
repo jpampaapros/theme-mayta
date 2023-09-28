@@ -14,7 +14,7 @@ $boton_carta = get_field("boton_texto_carta");
 $link_carta = get_field("boton_link_carta");
 
 ?>
-<main class="container h-auto md:py-150 py-50">
+<main class="container h-auto md:mt-150 mt-50">
 	<section class="relative flex justify-center md:mb-150 mb-250">
 		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--6">
 			<h2 class="font-medium md:text-50 text-35 text-white"> <?= $titulo ?></h2>
