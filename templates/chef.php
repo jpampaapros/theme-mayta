@@ -20,10 +20,17 @@ $adorno = get_field("adorno");
     </section>
     <section class="sec-1 md:flex md:mx-65 mb-84 md:mb-250">
         <div class="md:w-50% relative">
+            <?php 
+                $attr_image = array(
+                    "class" => "w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover",
+                    "data-scroll-speed" => "4",
+                    "data-scroll" => "1"
+                );
+            ?>
             <?= render_image($adorno," w-783 absolute -left-18");?>
-            <?= render_image($imagen,"w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover");?>
+            <?= render_image($imagen,$attr_image);?>
         </div>
-        <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full">
+        <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full" data-scroll-speed="1" data-scroll="1">
             <div class="hidden md:block">
                 <div class="text-white font-light"><?= $titulo ?></div>
                 <h1 class="text-75 font-medium text-white"><?= $nombre ?></h1>
@@ -51,7 +58,12 @@ $adorno = get_field("adorno");
                         <?php endif;?>
                         <div class="flex items-center gap-13 md:gap-21 opacity-50 timeline__card  ">
                             <?php if($item_image):?>
-                                <?= render_image($item_image,"w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image ");?>
+                                <?php 
+                                    $attr_image = array(
+                                        "class" => "w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image "
+                                    );
+                                ?>
+                                <?= render_image($item_image,$attr_image);?>
                             <?php endif;?>
                             <?php if($item_text):?>
                                 <div class="text-16 md:text-22 md:pr-72 pr-12"><?= $item_text;?></div>

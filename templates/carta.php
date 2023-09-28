@@ -16,13 +16,19 @@ $link_carta = get_field("boton_link_carta");
 ?>
 <main class="container h-auto md:mt-150 mt-50">
 	<section class="relative flex justify-center md:mb-150 mb-250">
-		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--6">
+		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--6 z-1" data-scroll-speed="1" data-scroll="1">
 			<h2 class="font-medium md:text-50 text-35 text-white"> <?= $titulo ?></h2>
 			<div class="text-16 text-white"><?= $texto ?></div>
 			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 mx-20 text-center h-auto md:w-250 w-180 text-18 font-medium my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
 		</div>
-		<!-- <img class="w-713 h-629 ml-220" src="<?= $imagen['url'] ?> " alt="<?= $imagen['alt'] ?>"> -->
-		<?= render_image($imagen, "md:w-713 md:h-629 md:ml-220 w-307 h-335 ml-20") ?>
+		<?php 
+			$attr_image = array(
+				"class" => "md:w-713 md:h-629 md:ml-220 w-307 h-335 ml-20",
+				"data-scroll-speed" => "4",
+				"data-scroll" => "1"
+			);
+		?>
+		<?= render_image($imagen,$attr_image) ?>
 	</section>
 	<?php if ($cards) : ?>
 		<section class="">
