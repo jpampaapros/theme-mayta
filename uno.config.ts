@@ -131,7 +131,7 @@ export default defineConfig({
     container: {
       center: true,
       padding: {
-        DEFAULT: '2rem',
+        DEFAULT: 'calc(100vw * 16 / var(--width-base))',
         md: 'calc(100vw * 138 / var(--width-base))',
         lg: 'calc(100vw * 138 / var(--width-base))',
         xl: 'calc(100vw * 138 / var(--width-base))',
