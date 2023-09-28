@@ -16,7 +16,7 @@
 	$link_google_encuentranos = get_field("link_google_encuentranos");
 ?>
 
-<main>
+<main class="md:mt-150 mt-50">
 	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
 		<section class="md:w-483 shrink-0">
 			<?= render_image($imagen_contacto,"w-full mb-50 md:mb-0 hidden md:block");?>	
