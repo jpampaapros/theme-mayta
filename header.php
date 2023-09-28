@@ -56,7 +56,7 @@ $urlActual = get_permalink();
       </div>
       <?php if ($urlActual == home_url('/')) : ?>
 
-          <a href="<?= $link_btn_r ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+          <a href="<?= $link_btn_r ?>" target="_blank" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
             <?= $text_btn_r ?>
           </a>
 
@@ -121,7 +121,7 @@ $urlActual = get_permalink();
     </div>
     <div class="flex flex-col items-center justify-center gap-24">
       <?php if ($link_btn) : ?>
-        <a href="<?= $link_btn ?>" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+        <a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
           <?= $text_btn ?>
         </a>
       <?php endif; ?>
