@@ -31,7 +31,7 @@ $urlActual = get_permalink();
     <a href="<?= home_url() ?>" class="hidden md:block">
       <?= render_image($logo_desktop, "h-67 w-auto hidden md:block"); ?>
     </a>
-    <a href="<?= home_url() ?>" class="ml--4 block md:hidden">
+    <a href="<?= home_url() ?>" class="ml--1 block md:hidden">
       <?= render_image($logo_mobile, "h-37 w-auto block md:hidden"); ?>
     </a>
     <div class="flex md:gap-22 gap-5 ">
