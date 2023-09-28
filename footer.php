@@ -9,7 +9,7 @@ $menu_locations = get_nav_menu_locations();
 $menu_web = count($menu_locations) > 0 ? $menu_locations["primary"] : null;
 $urlActual = get_permalink();
 ?>
-<footer class="container mt-71 md:pt-136 <?= ($urlActual == home_url('/'))? 'fixed bottom-20 left-0': 'relative' ?>">
+<footer class="container md:mt-150 mt-50 <?= ($urlActual == home_url('/'))? 'fixed bottom-20 left-0': 'relative' ?>">
 	<?php if ($urlActual != home_url('/')) : ?>
 		<?php if ($iconos) : ?>
 			<?= render_image($iconos, "absolute top-200 right-200 w-60 h-auto md:block hidden"); ?>
