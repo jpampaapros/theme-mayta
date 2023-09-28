@@ -25,43 +25,20 @@ $link_carta = get_field("boton_link_carta");
 		<?= render_image($imagen, "md:w-713 md:h-629 md:ml-220 w-307 h-335 ml-20") ?>
 	</section>
 	<?php if ($cards) : ?>
-		<section class="hidden md:block">
-			<div class="flex justify-center mb-150">
+		<section class="">
+			<div class="flex md:flex-row flex-col justify-center mb-150">
 				<?php
 				$switch = 1;
 				$cardCount = count($cards);
 				foreach ($cards as $key => $item) : ?>
 					<?php if ($switch == $cardCount) : ?>
-						<div class="flex flex-col text-center p-40">
+						<div class="flex flex-col text-center p-40 md:h-180 h-auto">
 							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
 							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
 							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php else : ?>
-						<div class="flex flex-col text-center border-e border-white p-40">
-							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
-							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
-						</div>
-					<?php endif; ?>
-					<?php $switch++ ?>
-				<?php endforeach; ?>
-			</div>
-		</section>
-		<section class="md:hidden block">
-			<div class="flex flex-col justify-center mb-150">
-				<?php
-				$switch = 1;
-				$cardCount = count($cards);
-				foreach ($cards as $key => $item) : ?>
-					<?php if ($switch == $cardCount) : ?>
-						<div class="flex flex-col text-center p-40">
-							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
-							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
-						</div>
-					<?php else : ?>
-						<div class="flex flex-col text-center border-b border-white p-40">
+						<div class="flex flex-col text-center md:border-e md:border-b-none border-b border-white p-40 md:h-180 h-auto">
 							<h3 class="text-22 leading-33"><?= $item['titulo'] ?></h3>
 							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
 							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
@@ -75,7 +52,7 @@ $link_carta = get_field("boton_link_carta");
 	<section class="flex justify-center">
 
 		<div class="flex flex-col items-center justify-center py-30 text-white">
-			<div class="md:w-500 w-auto">
+			<div class="md:w-500 w-auto text-center">
 				<?= $carta ?>
 			</div>
 			
