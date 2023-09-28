@@ -27,7 +27,7 @@ $urlActual = get_permalink();
 ?>
 <body class="<?php echo $body_classes;?> " <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
   <div class="" data-scroll-container>
-  <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
+  <header class="flex justify-between container md:py-36 items-baseline bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
       <?= render_image($logo_desktop, "h-67 w-auto hidden md:block"); ?>
     </a>
@@ -39,15 +39,15 @@ $urlActual = get_permalink();
         <?php
         wp_nav_menu(array(
           'menu' => 'Principal',
-          'menu_class' => 'flex gap-24',
+          'menu_class' => 'flex gap-24 pri-menu',
         ));
         ?>
       </div>
-      <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 md:block hidden">
+      <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 md:block hidden pri-menu">
       <?= $icono_red ?>
       </a>
-      <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden"></div>
-      <div class="w-auto md:h-50">
+      <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden pri-menu"></div>
+      <div class="w-auto md:h-50 pri-menu">
         <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
           <option value="es" selected>ES</option>
           <option value="en">EN</option>
