@@ -25,8 +25,8 @@ $urlActual = get_permalink();
   $body_classes = get_body_class();
   $body_classes = implode(" ",$body_classes);
 ?>
-<body class="<?php echo $body_classes;?> locomotive-scroll overflow-y-hidden" <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)" data-scroll-container>
-
+<body class="<?php echo $body_classes;?> " <?php generate_do_microdata('body'); ?> style="background-image: url(<?= home_url();?>/wp-content/uploads/2023/09/fondo.webp)">
+  <div class="" data-scroll-container>
   <header class="flex justify-between container md:py-36 items-end bg-transparent py-20">
     <a href="<?= home_url() ?>" class="hidden md:block">
       <?= render_image($logo_desktop, "h-67 w-auto hidden md:block"); ?>

@@ -17,7 +17,7 @@ $link_boton = get_field("boton_link_adicional");
 $imagen2 = get_field("imagen_adicional");
 
 ?>
-<main class="container md:py-150 p-50 pb-150">
+<main class="container md:mt-150 mt-50">
 	<section class=" flex flex-col md:mb-250 mb-90">
 		<div class="flex flex-col md:items-center justify-center md:mb-56 mb-30">
 			<div class="md:w-500 w-auto flex flex-col md:text-center text-left mb-60">
@@ -63,17 +63,17 @@ $imagen2 = get_field("imagen_adicional");
 		</section>
 	<?php endif; ?>
 	<?php if ($cards) : ?>
-		<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5 md:pl-70">
+		<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5">
 
 			<?php
 			$llave = 1;
 			foreach ($cards as $card) : ?>
 				<?php if ($llave % 2 !== 0) : ?>
 					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0 ml--8") ?>
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0") ?>
 				<?php else : ?>
 					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-142 md:mt-0 mt--60") ?>
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60") ?>
 				<?php endif ?>
 				<?php $llave++; ?>
 			<?php endforeach; ?>

@@ -11,7 +11,7 @@ $texto = get_field("texto_descripcion");
 $linea_linea = get_field("linea_linea");
 $adorno = get_field("adorno");
 ?>
-<main class="container md:pt-150 overflow-hidden">
+<main class="container md:mt-150 mt-50 overflow-hidden">
     <section class="block md:hidden pt-37">
         <div class="text-white font-light text-16"><?= $titulo ?></div>
         <h1 class="font-medium text-white text-44 md:text-75 "><?= $nombre ?></h1>
