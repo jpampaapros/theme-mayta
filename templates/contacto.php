@@ -16,7 +16,7 @@
 	$link_google_encuentranos = get_field("link_google_encuentranos");
 ?>
 
-<main class="md:mt-100 mt-50">
+<main class="md:pt-150 pt-50">
 	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
 		<section class="md:w-700 shrink-0">
 			<?php 
