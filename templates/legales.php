@@ -6,7 +6,7 @@ get_header();
 $titulo = get_field("titulo_pagina");
 $contenido = get_field("texto_legales");
 ?>
-<main class="container md:pt-150 pt-50">
+<main class="container md:mt-150 mt-50">
     <h1 class="md:text-75 text-35 text-white text-center mb-50"><?= $titulo ?></h1>
     <?php if ($contenido) : ?>
         <div class="md:text-22 text-18 text-white md:px-50">
