@@ -39,3 +39,7 @@ body{
 .red{
     color: red !important;
 }
+.t-doc p span select{
+    @apply md:h-66 h-43 text-black;
+    color: black !important;
+}

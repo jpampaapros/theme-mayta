@@ -35,7 +35,7 @@ $urlActual = get_permalink();
       <?= render_image($logo_mobile, "h-37 w-auto block md:hidden"); ?>
     </a>
     <div class="flex md:gap-22 gap-5 ">
-      <div class="md:block hidden">
+      <div class="md:block hidden ">
         <?php
         wp_nav_menu(array(
           'menu' => 'Principal',

@@ -14,9 +14,9 @@ $boton_carta = get_field("boton_texto_carta");
 $link_carta = get_field("boton_link_carta");
 
 ?>
-<main class="container h-auto md:pt-150 pt-50">
+<main class="container h-auto md:mt-150 mt-50">
 	<section class="relative flex justify-center md:mb-150 mb-250">
-		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--6 z-1" data-scroll-speed="1" data-scroll="1">
+		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--1 z-1" data-scroll-speed="1" data-scroll="1">
 			<h2 class="font-medium md:text-50 text-35 text-white"> <?= $titulo ?></h2>
 			<div class="text-16 text-white"><?= $texto ?></div>
 			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 mx-20 text-center h-auto md:w-250 w-180 text-18 font-medium my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
