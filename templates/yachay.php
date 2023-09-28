@@ -81,7 +81,7 @@ $imagen2 = get_field("imagen_adicional");
 		</section>
 	<?php endif; ?>
 	<?php if ($cards) : ?>
-		<section class="flex md:flex-row flex-col md:mb-250 mb-90 md:gap-82 gap-5">
+		<section class="flex md:flex-row flex-col md:mb-100 mb-90 md:gap-82 gap-5">
 
 			<?php
 			$llave = 1;
