@@ -24,12 +24,12 @@ $imagen2 = get_field("imagen_adicional");
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
 				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
-			<?php 
-				$attr_image = array(
-					"class" => "md:w-1514 md:h-533 w-auto h-237",
-					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
-				);
+			<?php
+			$attr_image = array(
+				"class" => "md:w-1514 md:h-533 w-auto h-237",
+				"data-scroll-speed" => "4",
+				"data-scroll" => "1"
+			);
 			?>
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
@@ -50,12 +50,12 @@ $imagen2 = get_field("imagen_adicional");
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
-							<?php 
-								$attr_image = array(
-									"class" => "md:w-728 md:h-548 w-323 h-auto",
-									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
-								);
+							<?php
+							$attr_image = array(
+								"class" => "md:w-728 md:h-548 w-323 h-auto",
+								"data-scroll-speed" => "4",
+								"data-scroll" => "1"
+							);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -63,12 +63,12 @@ $imagen2 = get_field("imagen_adicional");
 				<?php else : ?>
 					<div class="flex md:flex-row flex-col mb-130 relative">
 						<div class="md:w-50% w-full">
-							<?php 
-								$attr_image = array(
-									"class" => "md:w-728 md:h-548 w-323 h-auto",
-									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
-								);
+							<?php
+							$attr_image = array(
+								"class" => "md:w-728 md:h-548 w-323 h-auto",
+								"data-scroll-speed" => "4",
+								"data-scroll" => "1"
+							);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -87,15 +87,26 @@ $imagen2 = get_field("imagen_adicional");
 			$llave = 1;
 			foreach ($cards as $card) : ?>
 				<?php if ($llave % 2 !== 0) : ?>
-					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0") ?>
+					<?php
+					$attr_image = array(
+						"class" => "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0",
+						"data-scroll-speed" => "-1",
+						"data-scroll" => "1"
+					);
+					?>
+					<?= render_image($card, $attr_image) ?>
 				<?php else : ?>
-					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60") ?>
+					<?php
+					$attr_image = array(
+						"class" => "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60",
+						"data-scroll-speed" => "3",
+						"data-scroll" => "1"
+					);
+					?>
+					<?= render_image($card, $attr_image) ?>
 				<?php endif ?>
 				<?php $llave++; ?>
 			<?php endforeach; ?>
-
 		</section>
 	<?php endif; ?>
 	<?php if ($grilla2) : ?>
@@ -127,7 +138,7 @@ $imagen2 = get_field("imagen_adicional");
 	<?php endif; ?>
 	<?php if ($imagen2) : ?>
 		<section class=" pt-120 flex justify-center w-full">
-		<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-420 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
+			<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-420 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
 				<!-- <img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>"> -->
 				<div class="absolute md:top-60 top-40 w-full flex md:items-start items-center flex-col md:pl-30 pl-10 pr-10 md:pr-0">
 					<h2 class="md:text-50 text-27 md:mb-20 mb-8"><?= $subtitulo ?></h2>
@@ -135,7 +146,7 @@ $imagen2 = get_field("imagen_adicional");
 						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo2 ?></h1>
 					</div>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="md:w-auto w-210 h-auto pt-20 pb-16 md:px-40 text-center text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/bg-green-2.png)">
+						<a href="<?= $link_boton ?>" class="md:w-auto w-210 h-auto pt-20 pb-16 md:px-40 text-center text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>

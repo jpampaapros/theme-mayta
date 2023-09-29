@@ -9,7 +9,7 @@ $(".timeline").slick({
     slidesToScroll: 1,
     focusOnSelect: true,
     autoplay: true, 
-    autoplaySpeed: 1000,
+    autoplaySpeed: 850,
     responsive: [
         {
             breakpoint: 768,
