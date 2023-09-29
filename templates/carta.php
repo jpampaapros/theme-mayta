@@ -41,16 +41,16 @@ $link_carta = get_field("boton_link_carta");
 				$cardCount = count($cards);
 				foreach ($cards as $key => $item) : ?>
 					<?php if ($switch == $cardCount) : ?>
-						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20" style="padding-left: calc(100vw*(98/var(--width-base))); padding-right: calc(100vw*(98/var(--width-base)));">
+						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20 padding">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
-							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+							<a class="text-14 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<p class="text-18 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php else : ?>
-						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto" style=" padding-left: calc(100vw*(98/var(--width-base))); padding-right: calc(100vw*(98/var(--width-base)));">
+						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto padding">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
-							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+							<a class="text-14 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<p class="text-18 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php endif; ?>
 					<?php $switch++ ?>
@@ -66,7 +66,7 @@ $link_carta = get_field("boton_link_carta");
 			</div>
 			
 			<?php if ($link_carta) : ?>
-				<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link_carta ?>"><?= $boton_carta ?></a>
+				<a class="pt-20 pb-16 px-40 text-18 bg-transparent border border-white my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link_carta ?>" target="_blank"><?= $boton_carta ?></a>
 			<?php endif; ?>
 		</div>
 
