@@ -23,8 +23,10 @@ $adorno = get_field("adorno");
             <?php 
                 $attr_image = array(
                     "class" => "w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover",
-                    "data-scroll-speed" => "4",
-                    "data-scroll" => "1"
+                    "data-scroll-speed" => "5",
+                    "data-scroll" => "1",
+                    "data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
                 );
             ?>
             <?= render_image($adorno," w-783 absolute -left-18");?>
@@ -71,7 +73,8 @@ $adorno = get_field("adorno");
                         </div>
                         <div class="flex mt-40 md:mt-68 items-center pr-20">
                             <div class="indicator-circle rounded-full w-17 md:w-29 h-17 md:h-29 shrink-0 border-solid border-white border-1"></div>
-                            <div class="indicator-line ml-20 bg-lightblack shrink-0 w-130 md:w-281 h-2"></div>
+                            <div class="indicator-line ml-20 bg-lightblack shrink-0  h-2"></div>
+                            <!-- w-130 md:w-281 -->
                             <div class="bg-lightblack w-full h-2"></div>
                         </div>
                     </div>

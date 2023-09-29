@@ -25,7 +25,9 @@ $link_carta = get_field("boton_link_carta");
 			$attr_image = array(
 				"class" => "md:w-713 md:h-629 md:ml-220 w-307 h-335 ml-20",
 				"data-scroll-speed" => "4",
-				"data-scroll" => "1"
+				"data-scroll" => "1",
+				"data-scroll-class"=>"ani-opacity",
+				"data-scroll-delay"=>"1",
 			);
 		?>
 		<?= render_image($imagen,$attr_image) ?>
