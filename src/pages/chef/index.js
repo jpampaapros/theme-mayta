@@ -10,6 +10,8 @@ $(".timeline").slick({
     focusOnSelect: true,
     autoplay: true, 
     autoplaySpeed: 1000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
     responsive: [
         {
             breakpoint: 768,

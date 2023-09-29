@@ -28,7 +28,10 @@ $imagen2 = get_field("imagen_adicional");
 				$attr_image = array(
 					"class" => "md:w-1514 md:h-533 w-auto h-237",
 					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
+					"data-scroll" => "1",
+					"data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
+					
 				);
 			?>
 			<?= render_image($imagen, $attr_image) ?>
@@ -54,7 +57,9 @@ $imagen2 = get_field("imagen_adicional");
 								$attr_image = array(
 									"class" => "md:w-728 md:h-548 w-323 h-auto",
 									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
+									"data-scroll" => "1",
+									"data-scroll-class"=>"ani-opacity",
+									"data-scroll-delay"=>"1",
 								);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
@@ -67,7 +72,9 @@ $imagen2 = get_field("imagen_adicional");
 								$attr_image = array(
 									"class" => "md:w-728 md:h-548 w-323 h-auto",
 									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
+									"data-scroll" => "1",
+									"data-scroll-class"=>"ani-opacity",
+									"data-scroll-delay"=>"1",
 								);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
@@ -87,11 +94,27 @@ $imagen2 = get_field("imagen_adicional");
 			$llave = 1;
 			foreach ($cards as $card) : ?>
 				<?php if ($llave % 2 !== 0) : ?>
-					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0") ?>
+					<?php
+                    $attr_image = array(
+                        "class" => "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0",
+                        "data-scroll-speed" => "-1",
+                        "data-scroll" => "1",
+						"data-scroll-class"=>"ani-opacity",
+						"data-scroll-delay"=>"1",
+                    );
+                    ?>
+					<?= render_image($card, $attr_image) ?>
 				<?php else : ?>
-					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
-					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60") ?>
+					<?php
+                    $attr_image = array(
+                        "class" => "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60",
+                        "data-scroll-speed" => "3",
+                        "data-scroll" => "1",
+						"data-scroll-class"=>"ani-opacity",
+						"data-scroll-delay"=>"1",
+                    );
+                    ?>
+					<?= render_image($card, $attr_image) ?>
 				<?php endif ?>
 				<?php $llave++; ?>
 			<?php endforeach; ?>
