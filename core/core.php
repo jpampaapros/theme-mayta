@@ -166,6 +166,7 @@ class WpDevKit{
   public function get_reusable_functions()
   {
     include __DIR__ . '/theme-panel.php';
+    include __DIR__ . '/wpml.php';
     include __DIR__ . '/icons.php';
     include __DIR__ . '/utils.php';
   }

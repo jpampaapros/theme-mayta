@@ -52,10 +52,7 @@ $cadena = '/en/';
       </a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden pri-menu"></div>
       <div class="w-auto md:h-50 pri-menu">
-        <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
-        <option value="es" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
-          <option value="en" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
-        </select>
+        <?php echo do_shortcode("[selector_lenguajes]");?>
       </div>
       <?php if ($urlActual == home_url('/')) : ?>
 
@@ -90,10 +87,11 @@ $cadena = '/en/';
       </a>
       <div class="flex gap-5">
 
-      <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
-        <option value="es" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
-          <option value="en" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
-        </select>
+      <?php echo do_shortcode("[selector_lenguajes]");?>
+      <!-- <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
+        <option value="es" <?php //echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
+          <option value="en" <?php //echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
+        </select> -->
         <div class="h-30 w-1 bg-white mx-10 mr-0 block md:hidden"></div>
 
         <a href="#" class="w-32 h-32 block md:hidden hamburger2">
