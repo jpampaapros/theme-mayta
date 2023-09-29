@@ -120,7 +120,7 @@ $urlActual = get_permalink();
 			</div>
 		<?php endif; ?>
 	<?php endif; ?>
-	<div class="border-t-1 border-white justify-between text-white text-14 pt-10 hidden md:flex">
+	<div class="border-t-1 border-white justify-between text-white text-20 pt-10 hidden md:flex pb-20">
 		<?php if ($texto_copyright_footer) : ?>
 			<span class="no-underline font-normal"><?= $texto_copyright_footer; ?></span>
 		<?php endif; ?>

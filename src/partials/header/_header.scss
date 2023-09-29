@@ -2,13 +2,13 @@
   @apply list-none;
 
   a {
-    @apply md:text-18 md:leading-27 font-normal no-underline;
+    @apply md:leading-27 font-normal no-underline;
   }
   a:hover {
     @apply underline underline-offset-4;
   }
   a[aria-current="page"] {
-    @apply md:text-19 font-600 tracking-wider no-underline;
+    @apply md:text-22 font-600 tracking-wider no-underline;
   }
 
 }

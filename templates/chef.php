@@ -13,7 +13,7 @@ $adorno = get_field("adorno");
 ?>
 <main class="container md:mt-150 mt-50 overflow-hidden">
     <section class="block md:hidden pt-37">
-        <div class="text-white font-light text-16"><?= $titulo ?></div>
+        <div class="text-white  text-16"><?= $titulo ?></div>
         <h1 class="font-medium text-white text-44 md:text-75 "><?= $nombre ?></h1>
         <div class="text-16 md:text-25 font-medium text-white pb-12 md:pb-0"><?= $posicion ?></div>
         <div class="w-62 h-1 bg-white mb-79"></div>
@@ -32,12 +32,12 @@ $adorno = get_field("adorno");
         </div>
         <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full" data-scroll-speed="1" data-scroll="1">
             <div class="hidden md:block">
-                <div class="text-white font-light"><?= $titulo ?></div>
+                <div class="text-white "><?= $titulo ?></div>
                 <h1 class="text-75 font-medium text-white"><?= $nombre ?></h1>
                 <div class="text-25 font-medium text-white"><?= $posicion ?></div>
                 <div class="w-62 h-1 bg-white mb-79"></div>
             </div>
-            <div class="text-18 leading-27 text-white font-light text-chef"><?= $texto ?></div>
+            <div class="text-18 leading-27 text-white  text-chef"><?= $texto ?></div>
         </div>
     </section>
     <?php if($linea_linea):?>

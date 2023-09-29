@@ -42,7 +42,7 @@ $cadena = '/en/';
         <?php
         wp_nav_menu(array(
           'menu' => 'Principal',
-          'menu_class' => 'flex gap-24 pri-menu',
+          'menu_class' => 'flex gap-24 text-20 pri-menu',
         ));
         ?>
       </div>
