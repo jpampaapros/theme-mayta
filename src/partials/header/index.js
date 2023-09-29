@@ -25,6 +25,13 @@ $('#idioma').change(function () {
   } else if (opcionSeleccionada === "en") {
     window.location = "http://" + dominio + "/en" + rutaActual;
   }
+
+  // if (opcionSeleccionada === "es") {
+  //   let nuevaRuta = rutaActual.replace('/en', '');
+  //   let dd = window.location = "http://" + dominio + "/mayta" + nuevaRuta;
+  // } else if (opcionSeleccionada === "en") {
+  //   window.location = "http://" + dominio + "/mayta/en" + rutaActual;
+  // }
 });
 
 
