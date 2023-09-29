@@ -19,6 +19,9 @@ $link_red = get_field("link_red", "option");
 $text_btn_r = get_field("boton_texto_reservar", "option");
 $link_btn_r = get_field("boton_link_reservar", "option");
 $urlActual = get_permalink();
+// $dominio = $_SERVER['HTTP_HOST'];
+$current_url = $_SERVER['REQUEST_URI'];
+$cadena = '/en/';
 ?>
 <!-- locomotive-scroll -->
 <?php 
@@ -43,15 +46,15 @@ $urlActual = get_permalink();
         ));
         ?>
       </div>
+
       <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 md:block hidden pri-menu">
       <?= $icono_red ?>
       </a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden pri-menu"></div>
       <div class="w-auto md:h-50 pri-menu">
-        <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
-          <option value="es" selected>ES</option>
-          <option value="en">EN</option>
-
+        <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
+        <option value="es" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
+          <option value="en" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
         </select>
       </div>
       <?php if ($urlActual == home_url('/')) : ?>
@@ -87,10 +90,9 @@ $urlActual = get_permalink();
       </a>
       <div class="flex gap-5">
 
-        <select name="idioma" id="idioma" class="bg-transparent border-none text-white text-18">
-          <option value="es" selected>ES</option>
-          <option value="en">EN</option>
-
+      <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
+        <option value="es" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
+          <option value="en" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
         </select>
         <div class="h-30 w-1 bg-white mx-10 mr-0 block md:hidden"></div>
 
