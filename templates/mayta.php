@@ -14,7 +14,7 @@ $link_boton = get_field("boton_link_adicional");
 $adorno = get_field("adorno");
 ?>
 <main class="container md:mt-150 mt-50 ">
-	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-720 h-auto">
+	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-700 h-auto">
 		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
 			<?php
 			$attr_image = array(

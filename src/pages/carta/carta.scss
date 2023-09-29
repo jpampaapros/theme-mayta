@@ -9,7 +9,7 @@
 }
 
 .padding{
-    @apply md:px-98 px-0;
+    @apply md:px-98 px-0 md:mx-0 mx-40;
 }
 
 .maridaje:hover{
@@ -23,4 +23,7 @@
     @screen md{
         height: 80vh;
     }
+}
+.topp{
+   @apply md:top-352 top-260; 
 }

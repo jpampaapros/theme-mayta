@@ -15,10 +15,10 @@ $link_carta = get_field("boton_link_carta");
 
 ?>
 <main class="container h-auto md:mt-150 mt-50">
-	<section class="relative flex justify-center md:mb-150 mb-250">
-		<div class="flex flex-col items-start absolute md:top-352 md:left-335 top-300 left--1 z-1" data-scroll-speed="1" data-scroll="1">
-			<h2 class="font-medium md:text-50 text-35 text-white mb-20"> <?= $titulo ?></h2>
-			<div class="text-16 text-white mb-60 font-medium"><?= $texto ?></div>
+	<section class="relative flex justify-center md:mb-150 mb-200">
+		<div class="flex flex-col items-start absolute topp md:left-335  left--1 z-1" data-scroll-speed="1" data-scroll="1">
+			<h2 class="font-medium md:text-50 text-35 text-white md:mb-20 mb-10"> <?= $titulo ?></h2>
+			<div class="text-16 text-white md:mb-60 mb-10 font-medium"><?= $texto ?></div>
 			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 md:m-0 m-20 text-center h-auto md:w-250 w-180 text-18 font-medium  hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
 		</div>
 		<?php 
@@ -35,7 +35,7 @@ $link_carta = get_field("boton_link_carta");
 	<p class="px-98 pt-2 hidden"></p>
 	<?php if ($cards) : ?>
 		<section class="">		
-			<div class="flex md:flex-row flex-col justify-center mb-150">
+			<div class="flex md:flex-row flex-col justify-center md:mb-150 mb-60">
 				<?php
 				$switch = 1;
 				$cardCount = count($cards);
