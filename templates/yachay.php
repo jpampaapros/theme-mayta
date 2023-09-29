@@ -24,12 +24,12 @@ $imagen2 = get_field("imagen_adicional");
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
 				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
-			<?php
-			$attr_image = array(
-				"class" => "md:w-1514 md:h-533 w-auto h-237",
-				"data-scroll-speed" => "4",
-				"data-scroll" => "1"
-			);
+			<?php 
+				$attr_image = array(
+					"class" => "md:w-1514 md:h-533 w-auto h-237",
+					"data-scroll-speed" => "4",
+					"data-scroll" => "1"
+				);
 			?>
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
@@ -50,12 +50,12 @@ $imagen2 = get_field("imagen_adicional");
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
-							<?php
-							$attr_image = array(
-								"class" => "md:w-728 md:h-548 w-323 h-auto",
-								"data-scroll-speed" => "4",
-								"data-scroll" => "1"
-							);
+							<?php 
+								$attr_image = array(
+									"class" => "md:w-728 md:h-548 w-323 h-auto",
+									"data-scroll-speed" => "4",
+									"data-scroll" => "1"
+								);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -63,12 +63,12 @@ $imagen2 = get_field("imagen_adicional");
 				<?php else : ?>
 					<div class="flex md:flex-row flex-col mb-130 relative">
 						<div class="md:w-50% w-full">
-							<?php
-							$attr_image = array(
-								"class" => "md:w-728 md:h-548 w-323 h-auto",
-								"data-scroll-speed" => "4",
-								"data-scroll" => "1"
-							);
+							<?php 
+								$attr_image = array(
+									"class" => "md:w-728 md:h-548 w-323 h-auto",
+									"data-scroll-speed" => "4",
+									"data-scroll" => "1"
+								);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -87,23 +87,11 @@ $imagen2 = get_field("imagen_adicional");
 			$llave = 1;
 			foreach ($cards as $card) : ?>
 				<?php if ($llave % 2 !== 0) : ?>
-					<?php
-					$attr_image = array(
-						"class" => "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0",
-						"data-scroll-speed" => "-1",
-						"data-scroll" => "1"
-					);
-					?>
-					<?= render_image($card, $attr_image) ?>
+					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:mt-120 mt-30" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:mt-120 mt-30 md:ml-0") ?>
 				<?php else : ?>
-					<?php
-					$attr_image = array(
-						"class" => "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60",
-						"data-scroll-speed" => "3",
-						"data-scroll" => "1"
-					);
-					?>
-					<?= render_image($card, $attr_image) ?>
+					<!-- <img class="md:w-347 md:h-589 w-171 h-276 md:ml-0 ml-183 md:mt-0 mt--60" src="<?= $card['url'] ?>" alt="<?= $card['alt'] ?>"> -->
+					<?= render_image($card, "md:w-347 md:h-589 w-155 h-260 md:ml-0 ml-162 md:mt-0 mt--60") ?>
 				<?php endif ?>
 				<?php $llave++; ?>
 			<?php endforeach; ?>

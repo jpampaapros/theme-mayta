@@ -110,6 +110,14 @@ function get_icon($name, $class = "")
             </svg>
 <?php
             break;
+        
+        case "languege-switcher":
+            ?>
+            <svg class="<?php echo $class;?>" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+            <path d="M11.1799 15.5981C10.8159 15.5981 10.4728 15.4562 10.2144 15.1987L5.40894 10.3932L6.05227 9.74988L10.8577 14.5553C11.0297 14.7273 11.3291 14.7273 11.5011 14.5553L16.3065 9.74988L16.9499 10.3932L12.1444 15.1987C11.8869 15.4562 11.5438 15.5981 11.1789 15.5981H11.1799Z" fill="#DCD3CB"/>
+            </svg>
+            <?php
+        break;
 
     endswitch;
 }

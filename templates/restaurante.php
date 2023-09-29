@@ -13,7 +13,15 @@ $galeria = get_field("galeria_restaurante");
 	<div class=" h-auto flex gap-20 flex-wrap mx-auto grid-images">
 		<?php
 		foreach ($galeria as $key => $item) : ?>
-			<?= render_image($item,"w-full grid-item");?>
+			<?php 
+				$attr_image = array(
+					"class" => "w-full grid-item",
+					"data-scroll" => "1",
+					"data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
+				);
+			?>
+			<?= render_image($item,$attr_image);?>
 		<?php endforeach; ?>
 	</div>
 </main>

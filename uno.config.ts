@@ -8,6 +8,7 @@ export default defineConfig({
   content: {
     filesystem: [
       './templates/**/*.php',
+      './core/*.php',
       './partials/**/*.php',
       './header.php',
       './footer.php'

@@ -22,15 +22,19 @@
 			<?php 
 				$attr_image = array(
 					"class" => "w-full mb-50 md:mb-0 hidden md:block",
-					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
+					"data-scroll-speed" => "5",
+					"data-scroll" => "1",
+					"data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
 				);
 			?>
 			<?php 
 				$attr_image2 = array(
 					"class" => "w-full mb-50 md:mb-0 md:hidden",
-					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
+					"data-scroll-speed" => "5",
+					"data-scroll" => "1",
+					"data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
 				);
 			?>
 			<?= render_image($imagen_contacto,$attr_image);?>	

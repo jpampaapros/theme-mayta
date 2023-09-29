@@ -15,10 +15,19 @@
         @apply cursor-pointer;
     }
 
+    .indicator-line{
+        width: 0;
+        transition: width linear .5s;
+    }
+
     & .slick-current{
 
         .indicator-circle{
             @apply bg-white;
+        }
+
+        .indicator-line{
+            @apply w-130 md:w-281;
         }
 
         .opacity-50{
@@ -31,3 +40,22 @@
     }
 }
 
+
+
+.ani-opacity{
+    animation: animationFade 2s linear;
+}
+
+@keyframes animationFade {
+    0% {
+      opacity: 0;
+    }
+    
+    10% {
+        opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+}

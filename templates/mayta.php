@@ -20,7 +20,9 @@ $adorno = get_field("adorno");
 				$attr_image = array(
 					"class" => "absolute md:top-40 md:right-70 top-15 right-30 w-300 md:w-654 h-296 md:h-682 objec-cover",
 					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
+					"data-scroll" => "1",
+					"data-scroll-class"=>"ani-opacity",
+					"data-scroll-delay"=>"1",
 				);
 			?>
 			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
@@ -95,7 +97,9 @@ $adorno = get_field("adorno");
 						$attr_image = array(
 							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
 							"data-scroll-speed" => "4",
-							"data-scroll" => "1"
+							"data-scroll" => "1",
+							"data-scroll-class"=>"ani-opacity",
+							"data-scroll-delay"=>"1",
 							);
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
@@ -114,7 +118,9 @@ $adorno = get_field("adorno");
 						$attr_image = array(
 							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
 							"data-scroll-speed" => "4",
-							"data-scroll" => "1"
+							"data-scroll" => "1",
+							"data-scroll-class"=>"ani-opacity",
+							"data-scroll-delay"=>"1",
 						);
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
