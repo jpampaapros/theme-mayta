@@ -80,7 +80,7 @@ $cadena = '/en/';
       </a>
     </div>
   </header>
-  <div id="slidemenu" class="bg-green3 w-100% z-999 h-100% hidden">
+  <div id="slidemenu" class="fondo w-100% z-999 h-100% hidden scrolloverflow">
     <div class="flex justify-between container items-end bg-transparent py-20 mb-69">
       <a href="<?= home_url() ?>" >
         <?= render_image($logo_mobile, "h-37 w-auto block md:hidden"); ?>

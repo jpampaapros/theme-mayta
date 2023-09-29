@@ -16,14 +16,14 @@ $adorno = get_field("adorno");
 <main class="container md:mt-150 mt-50 ">
 	<section class="sec-1 flex md:flex-row flex-col md:mt-25 md:mx-65 md:h-720 h-auto">
 		<div class="md:w-50% flex justify-end relative md:h-auto h-320">
-			<?php 
-				$attr_image = array(
-					"class" => "absolute md:top-40 md:right-70 top-15 right-30 w-300 md:w-654 h-296 md:h-682 objec-cover",
-					"data-scroll-speed" => "4",
-					"data-scroll" => "1",
-					"data-scroll-class"=>"ani-opacity",
-					"data-scroll-delay"=>"1",
-				);
+			<?php
+			$attr_image = array(
+				"class" => "absolute md:top-40 md:right-70 top-15 right-30 w-300 md:w-654 h-296 md:h-682 objec-cover",
+				"data-scroll-speed" => "4",
+				"data-scroll" => "1",
+				"data-scroll-class" => "ani-opacity",
+				"data-scroll-delay" => "1",
+			);
 			?>
 			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
 			<?= render_image($imagen, $attr_image) ?>
@@ -33,7 +33,8 @@ $adorno = get_field("adorno");
 		</div>
 	</section>
 	<section class="flex justify-center md:pt-158 pt-72 pb-72 md:pb-115">
-		<svg width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+		<svg width="80" height="70" class="md:block hidden" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g id="Group 44">
 				<g id="Vector">
 					<path d="M79.516 70H64.386L58.0659 0H73.1959L79.516 70ZM66.9715 67.223H76.5475L70.6104 2.77702H61.0345L66.9715 67.223Z" fill="black" />
@@ -84,7 +85,47 @@ $adorno = get_field("adorno");
 				</linearGradient>
 			</defs>
 		</svg>
-
+		<svg xmlns="http://www.w3.org/2000/svg" class="block md:hidden" xmlns:xlink="http://www.w3.org/1999/xlink" width="43px" height="38px" viewBox="0 0 43 38" version="1.1">
+			<defs>
+				<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="63.6616" y1="6.08696" x2="93.6411" y2="19.0563" gradientTransform="matrix(0.5375,0,0,0.542857,0,0)">
+					<stop offset="0" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+					<stop offset="0.479167" style="stop-color:rgb(96.078431%,75.686275%,67.45098%);stop-opacity:1;" />
+					<stop offset="1" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+				</linearGradient>
+				<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="6.10983" y1="6.08696" x2="36.0893" y2="19.0563" gradientTransform="matrix(0.5375,0,0,0.542857,0,0)">
+					<stop offset="0" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+					<stop offset="0.479167" style="stop-color:rgb(96.078431%,75.686275%,67.45098%);stop-opacity:1;" />
+					<stop offset="1" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+				</linearGradient>
+				<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="8.66432" y1="50.9749" x2="11.9205" y2="51.1752" gradientTransform="matrix(0.5375,0,0,0.542857,0,0)">
+					<stop offset="0" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+					<stop offset="0.479167" style="stop-color:rgb(96.078431%,75.686275%,67.45098%);stop-opacity:1;" />
+					<stop offset="1" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+				</linearGradient>
+				<linearGradient id="linear3" gradientUnits="userSpaceOnUse" x1="65.5607" y1="7.29366" x2="70.1581" y2="7.14455" gradientTransform="matrix(0.5375,0,0,0.542857,0,0)">
+					<stop offset="0" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+					<stop offset="0.479167" style="stop-color:rgb(96.078431%,75.686275%,67.45098%);stop-opacity:1;" />
+					<stop offset="1" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+				</linearGradient>
+				<linearGradient id="linear4" gradientUnits="userSpaceOnUse" x1="29.5869" y1="4.41325" x2="59.1914" y2="37.8488" gradientTransform="matrix(0.5375,0,0,0.542857,0,0)">
+					<stop offset="0" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+					<stop offset="0.479167" style="stop-color:rgb(96.078431%,75.686275%,67.45098%);stop-opacity:1;" />
+					<stop offset="1" style="stop-color:rgb(64.313725%,36.470588%,26.27451%);stop-opacity:1;" />
+				</linearGradient>
+			</defs>
+			<g id="surface1">
+				<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 42.738281 38 L 34.609375 38 L 31.210938 0 L 39.34375 0 Z M 35.996094 36.492188 L 41.144531 36.492188 L 37.953125 1.507812 L 32.804688 1.507812 Z M 35.996094 36.492188 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 42.738281 38 L 34.609375 38 L 31.210938 0 L 39.34375 0 Z M 35.996094 36.492188 L 41.144531 36.492188 L 37.953125 1.507812 L 32.804688 1.507812 Z M 35.996094 36.492188 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 8.410156 38 L 0.277344 38 L 3.671875 0 L 11.804688 0 Z M 1.921875 36.492188 L 7.070312 36.492188 L 10.210938 1.507812 L 5.0625 1.507812 Z M 1.921875 36.492188 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 8.410156 38 L 0.277344 38 L 3.671875 0 L 11.804688 0 Z M 1.921875 36.492188 L 7.070312 36.492188 L 10.210938 1.507812 L 5.0625 1.507812 Z M 1.921875 36.492188 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 6.953125 0.683594 L 3.671875 37.179688 L 5.160156 37.316406 L 8.441406 0.820312 Z M 6.953125 0.683594 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 6.953125 0.683594 L 3.671875 37.179688 L 5.160156 37.316406 L 8.441406 0.820312 Z M 6.953125 0.683594 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 36.050781 0.683594 L 34.566406 0.820312 L 37.84375 37.320312 L 39.328125 37.183594 Z M 36.050781 0.683594 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear3);" d="M 36.050781 0.683594 L 34.566406 0.820312 L 37.84375 37.320312 L 39.328125 37.183594 Z M 36.050781 0.683594 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 27.453125 27.550781 L 15.613281 27.550781 L 13.246094 1.507812 L 10.210938 1.507812 L 11.035156 0 L 16.128906 0 L 18.34375 24.484375 L 24.722656 24.484375 L 26.886719 0 L 32.035156 0 L 32.035156 1.507812 L 29.820312 1.507812 Z M 27.453125 27.550781 " />
+				<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear4);" d="M 27.453125 27.550781 L 15.613281 27.550781 L 13.246094 1.507812 L 10.210938 1.507812 L 11.035156 0 L 16.128906 0 L 18.34375 24.484375 L 24.722656 24.484375 L 26.886719 0 L 32.035156 0 L 32.035156 1.507812 L 29.820312 1.507812 Z M 27.453125 27.550781 " />
+			</g>
+		</svg>
 	</section>
 
 	<?php $switch = 1; ?>
@@ -93,14 +134,14 @@ $adorno = get_field("adorno");
 		<?php if ($switch == 1) : ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
 				<div class="h-auto w-50% flex justify-center items-center">
-					<?php 
-						$attr_image = array(
-							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
-							"data-scroll-speed" => "4",
-							"data-scroll" => "1",
-							"data-scroll-class"=>"ani-opacity",
-							"data-scroll-delay"=>"1",
-							);
+					<?php
+					$attr_image = array(
+						"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
+						"data-scroll-speed" => "4",
+						"data-scroll" => "1",
+						"data-scroll-class" => "ani-opacity",
+						"data-scroll-delay" => "1",
+					);
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
@@ -114,14 +155,14 @@ $adorno = get_field("adorno");
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
-					<?php 
-						$attr_image = array(
-							"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
-							"data-scroll-speed" => "4",
-							"data-scroll" => "1",
-							"data-scroll-class"=>"ani-opacity",
-							"data-scroll-delay"=>"1",
-						);
+					<?php
+					$attr_image = array(
+						"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
+						"data-scroll-speed" => "4",
+						"data-scroll" => "1",
+						"data-scroll-class" => "ani-opacity",
+						"data-scroll-delay" => "1",
+					);
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
@@ -139,11 +180,11 @@ $adorno = get_field("adorno");
 				<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
 				<div class="absolute top-50 w-full flex items-center flex-col">
 					<div class="inline-block bg-white py-3 md:py-7  h-auto w-auto px-10 md:px-16 text-center  mb-30 mix-blend-screen">
-						<h1 class="md:text-50 text-27 text-black font-bold"><?= $titulo ?></h1>
+						<h1 class="md:text-50 text-27 text-black font-bold md:pt-10 pt-5"><?= $titulo ?></h1>
 					</div>
 					<h2 class="md:text-50 text-25 mb-20 text-center"><?= $subtitulo ?></h2>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url();?>/wp-content/uploads/2023/09/bg-green-2.png)">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>

@@ -16,3 +16,11 @@
     --tw-text-opacity: 0.8;
     color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
+
+.scrolloverflow{
+    overflow-y: scroll;
+    height: 100vh;
+    @screen md{
+        height: 80vh;
+    }
+}
