@@ -16,10 +16,10 @@ $link_carta = get_field("boton_link_carta");
 ?>
 <main class="container h-auto md:mt-150 mt-50">
 	<section class="relative flex justify-center md:mb-150 mb-250">
-		<div class="flex flex-col absolute md:top-352 md:left-335 top-300 left--1 z-1" data-scroll-speed="1" data-scroll="1">
-			<h2 class="font-medium md:text-50 text-35 text-white"> <?= $titulo ?></h2>
-			<div class="text-16 text-white"><?= $texto ?></div>
-			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 mx-20 text-center h-auto md:w-250 w-180 text-18 font-medium my-20 hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
+		<div class="flex flex-col items-start absolute md:top-352 md:left-335 top-300 left--1 z-1" data-scroll-speed="1" data-scroll="1">
+			<h2 class="font-medium md:text-50 text-35 text-white mb-20"> <?= $titulo ?></h2>
+			<div class="text-16 text-white mb-60 font-medium"><?= $texto ?></div>
+			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 md:m-0 m-20 text-center h-auto md:w-250 w-180 text-18 font-medium  hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
 		</div>
 		<?php 
 			$attr_image = array(
@@ -45,7 +45,7 @@ $link_carta = get_field("boton_link_carta");
 							<p class="text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 					<?php else : ?>
-						<div class="flex flex-col text-center md:border-e md:border-b-none border-b pt-20 border-white md:h-180 h-auto" style="padding-left: calc(100vw*(98/var(--width-base))); padding-right: calc(100vw*(98/var(--width-base)));">
+						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto" style=" padding-left: calc(100vw*(98/var(--width-base))); padding-right: calc(100vw*(98/var(--width-base)));">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
 							<a class="text-22 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>"> VER MARIDAJE</a>
 							<p class="text-22 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>

@@ -100,13 +100,13 @@ $adorno = get_field("adorno");
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
-				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
+				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
 		<?php else : ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
-				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white font-light tracking-wide" data-scroll-speed="1" data-scroll="1">
+				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white  tracking-wide" data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">

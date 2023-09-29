@@ -42,7 +42,7 @@ $cadena = '/en/';
         <?php
         wp_nav_menu(array(
           'menu' => 'Principal',
-          'menu_class' => 'flex gap-24 pri-menu',
+          'menu_class' => 'flex gap-24 text-20 pri-menu',
         ));
         ?>
       </div>
@@ -52,9 +52,9 @@ $cadena = '/en/';
       </a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden pri-menu"></div>
       <div class="w-auto md:h-50 pri-menu">
-        <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
-        <option value="es" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
-          <option value="en" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
+        <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-20 font-normal ">
+          <option value="es" class="text-black bg-transparent" <?php echo (strpos($current_url, $cadena) === 0) ? '' : 'selected'; ?>>ES</option>
+          <option value="en" class="text-black bg-transparent" <?php echo (strpos($current_url, $cadena) === 0) ? 'selected' : ''; ?> >EN</option>
         </select>
       </div>
       <?php if ($urlActual == home_url('/')) : ?>
