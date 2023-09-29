@@ -7,8 +7,8 @@ $titulo = get_field("titulo");
 $formulario = get_field("formulario");
 ?>
 <main class="container md:mt-150 mt-50  h-auto">
-    <h1 class="md:text-75 text-35 text-center mb-40"><?= $titulo ?></h1>
-    <div class="flex-wrap ">
+    <h1 class="md:text-75 text-35 text-center mb-40 font-bold"><?= $titulo ?></h1>
+    <div class="flex-wrap">
         <?= do_shortcode($formulario); ?>
     </div>
 </main>

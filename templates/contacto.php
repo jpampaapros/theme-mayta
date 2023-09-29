@@ -61,7 +61,7 @@
 									<div class="font-semibold md:mb-3">
 										<?= $item_title;?>
 									</div>
-									<div class="[&>p]:font-light">
+									<div class="[&>p]:font-normal">
 										<?= $item_text;?>
 									</div>
 								</div>
