@@ -85,7 +85,7 @@ $cadena = '/en/';
       <a href="<?= home_url() ?>" >
         <?= render_image($logo_mobile, "h-37 w-auto block md:hidden"); ?>
       </a>
-      <div class="flex gap-5">
+      <div class="flex gap-5 pb-5">
 
       <?php echo do_shortcode("[selector_lenguajes]");?>
       <!-- <select name="idioma" id="idioma"  class="bg-transparent border-none text-white text-18">
