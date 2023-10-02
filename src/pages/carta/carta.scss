@@ -7,3 +7,23 @@
         border-bottom-style: none;
     }
 }
+
+.padding{
+    @apply md:px-98 px-0 md:mx-0 mx-40;
+}
+
+.maridaje:hover{
+    --tw-text-opacity: 0.8;
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.scrolloverflow{
+    overflow-y: scroll;
+    height: 100vh;
+    @screen md{
+        height: 80vh;
+    }
+}
+.topp{
+   @apply md:top-352 top-260; 
+}

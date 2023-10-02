@@ -7,7 +7,7 @@ function renderizar_selector_lenguajes_lista() {
   <?php if($languages):?>  
     <div class="flex items-start overflow-hidden hover:overflow-visible h-23 hover:h-auto relative">
         <?php get_icon("languege-switcher","w-21 h-21 mt-2 mr-21");?>
-        <ul class="bg-transparent border-none text-white w-21 text-18 uppercase inline-block absolute top-0 right-0">
+        <ul class="bg-transparent border-none text-white w-21 text-18 uppercase inline-block absolute top-0 right-0 idiomas">
             <?php
             foreach ($languages as $language) {
                 echo '<li>';

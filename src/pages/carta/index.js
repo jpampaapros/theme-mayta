@@ -8,3 +8,4 @@ $('.maridaje').mouseover(function(event) {
     let dataId = $(this).data('id'); 
     $('.price' + dataId).removeClass('block').addClass('hidden');
 });
+
