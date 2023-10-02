@@ -17,7 +17,7 @@ $link_boton = get_field("boton_link_adicional");
 $imagen2 = get_field("imagen_adicional");
 
 ?>
-<main class="container md:mt-150 mt-50">
+<main class="container md:mt-110 mt-50">
 	<section class=" flex flex-col md:mb-90 mb-35">
 		<div class="flex flex-col md:items-center justify-center md:mb-56 mb-30">
 			<?php 
@@ -170,7 +170,7 @@ $imagen2 = get_field("imagen_adicional");
 						<?= $titulo2 ?>
 					</div>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="md:w-auto w-full h-auto pt-20 pb-16 md:px-40 text-center text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg-green-2.png)">
+						<a href="<?= $link_boton ?>" class="md:w-auto w-full h-auto pt-20 pb-16 md:px-40 text-center text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= site_url("/"); ?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>

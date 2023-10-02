@@ -22,14 +22,14 @@ $adorno = get_field("adorno");
         <div class="md:w-50% relative">
             <?php 
                 $attr_image = array(
-                    "class" => "w-277 md:w-705 top-22 md:top-40 relative left-32 md:left-120 object-cover",
+                    "class" => "w-277 md:w-705 h-397 md:h-auto top-22 md:top-40 relative left-32 md:left-120 object-cover",
                     "data-scroll-speed" => "5",
                     "data-scroll" => "1",
                     "data-scroll-class"=>"ani-opacity",
 					"data-scroll-delay"=>"1",
                 );
             ?>
-            <?= render_image($adorno," w-783 absolute -left-18");?>
+            <?= render_image($adorno," w-783 absolute -left-18 h-377 md:h-auto object-contain");?>
             <?= render_image($imagen,$attr_image);?>
         </div>
         <div class="md:flex justify-center md:pl-149 flex-col md:w-50% pt-80 md:pt-100 w-full" data-scroll-speed="1" data-scroll="1">
@@ -47,7 +47,7 @@ $adorno = get_field("adorno");
             <?php if($titulo):?>
                 <h2 class="mb-31 text-44 block md:hidden"><?= $titulo;?></h2>
             <?php endif;?>
-            <div class="timeline">
+            <div class="timeline mb-50 md:mb-0">
                 <?php foreach ($linea_linea as $item): ?>
                     <?php 
                         $item_anio = $item['ano'];   
