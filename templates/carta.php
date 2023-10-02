@@ -63,7 +63,7 @@ $link_carta = get_field("boton_link_carta");
 	<section class="flex justify-center">
 
 		<div class="flex flex-col items-center justify-center py-30 text-white">
-			<div class="md:w-500 w-auto text-center text-16">
+			<div class="md:w-500 w-auto text-center text-18">
 				<?= $carta ?>
 			</div>
 			
