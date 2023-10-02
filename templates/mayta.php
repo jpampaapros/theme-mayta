@@ -32,7 +32,7 @@ $adorno = get_field("adorno");
 			<?= $texto ?>
 		</div>
 	</section>
-	<section class="flex justify-center md:pt-98 pt-72 pb-72 md:pb-75">
+	<section class="flex justify-center md:pt-98  md:py-52 py-72 md:pb-75">
 		<div class="md:w-79 md:h-70 w-42 h-38 ">
 			<svg width="80" height="70" class="w-full h-full" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="Group 44">
