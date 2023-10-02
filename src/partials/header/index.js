@@ -14,39 +14,17 @@ $(function () {
 
 // let dominio = window.location.hostname;
 let rutaActual = window.location.pathname;
-// $('#idioma').change(function () {
-
-//   let opcionSeleccionada = $(this).val();
-
-
-//   if (opcionSeleccionada === "es") {
-//     let nuevaRuta = rutaActual.replace('/en', '');
-//     let dd = window.location = "http://" + dominio + nuevaRuta;
-//   } else if (opcionSeleccionada === "en") {
-//     window.location = "http://" + dominio + "/en" + rutaActual;
-//   }
-
-  // if (opcionSeleccionada === "es") {
-  //   let nuevaRuta = rutaActual.replace('/en', '');
-  //   let dd = window.location = "http://" + dominio + "/mayta" + nuevaRuta;
-  // } else if (opcionSeleccionada === "en") {
-  //   window.location = "http://" + dominio + "/mayta/en" + rutaActual;
-  // }
-// });
 
 if (rutaActual.indexOf("/en/") !== -1) {
   let ul = $(".idiomas");
+  ul.each( function (index) {
+    let items = $(this).find("li");
 
-  let items = ul.find("li");
-
-  if (items.length >= 2) {
+    if (items.length >= 2) {
       items.eq(1).insertBefore(items.eq(0));
-  }
-} else {
-}
-
-
-
+    }
+  })
+};
 
 
 
