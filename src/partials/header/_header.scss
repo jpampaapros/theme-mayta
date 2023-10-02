@@ -22,11 +22,15 @@
 #slidemenu {
   position: fixed;
   top: 0;
-  right: -300px; /* Esta es la posición inicial fuera de la pantalla */
+  right: -300px; 
   height: 100%;
-  transition: left 0.3s; /* Transición para suavizar el movimiento */
+  transition: left 0.3s; 
 }
 
 .pri-menu{
   @apply md:mt-15;
+}
+
+.fondo{
+  background-color: rgba(67, 99, 99, 0.9)
 }
