@@ -24,12 +24,12 @@ $imagen2 = get_field("imagen_adicional");
 				<h1 class="text-75 font-medium leading-90 text-white"><?= $titulo ?></h1>
 				<div class="h-1 md:w-60 w-110 bg-white md:ml-220"></div>
 			</div>
-			<?php 
-				$attr_image = array(
-					"class" => "md:w-1514 md:h-533 w-auto h-237",
-					"data-scroll-speed" => "4",
-					"data-scroll" => "1"
-				);
+			<?php
+			$attr_image = array(
+				"class" => "md:w-1514 md:h-533 w-auto h-237",
+				"data-scroll-speed" => "4",
+				"data-scroll" => "1"
+			);
 			?>
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
@@ -50,12 +50,12 @@ $imagen2 = get_field("imagen_adicional");
 							<?= $item['texto'] ?>
 						</div>
 						<div class="md:w-50% w-full md:flex md:justify-end">
-							<?php 
-								$attr_image = array(
-									"class" => "md:w-728 md:h-548 w-323 h-auto",
-									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
-								);
+							<?php
+							$attr_image = array(
+								"class" => "md:w-728 md:h-548 w-323 h-auto",
+								"data-scroll-speed" => "4",
+								"data-scroll" => "1"
+							);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -63,12 +63,12 @@ $imagen2 = get_field("imagen_adicional");
 				<?php else : ?>
 					<div class="flex md:flex-row flex-col mb-130 relative">
 						<div class="md:w-50% w-full">
-							<?php 
-								$attr_image = array(
-									"class" => "md:w-728 md:h-548 w-323 h-auto",
-									"data-scroll-speed" => "4",
-									"data-scroll" => "1"
-								);
+							<?php
+							$attr_image = array(
+								"class" => "md:w-728 md:h-548 w-323 h-auto",
+								"data-scroll-speed" => "4",
+								"data-scroll" => "1"
+							);
 							?>
 							<?= render_image($item['imagen'], $attr_image) ?>
 						</div>
@@ -142,9 +142,9 @@ $imagen2 = get_field("imagen_adicional");
 			</div>
 		</section>
 	<?php endif; ?>
-		<section class="flex justify-center pt-78 md:pb-0 pb-28">
-		
-			<svg width="80" height="70" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<section class="flex justify-center pt-78 md:pb-0 pb-28">
+		<div class="md:w-101 md:h-90 w-62 h-55">
+			<svg width="80" height="70" class="w-full h-full" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="Group 44">
 					<g id="Vector">
 						<path d="M79.516 70H64.386L58.0659 0H73.1959L79.516 70ZM66.9715 67.223H76.5475L70.6104 2.77702H61.0345L66.9715 67.223Z" fill="black" />
@@ -195,7 +195,8 @@ $imagen2 = get_field("imagen_adicional");
 					</linearGradient>
 				</defs>
 			</svg>
-		</section>
+		</div>
+	</section>
 </main>
 
 <?php
