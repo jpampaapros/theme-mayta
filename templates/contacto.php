@@ -90,7 +90,7 @@
 									$valor_item = $item["valor"];
 								?>
 								<div>
-									<a class="flex gap-10 mb-20 text-19 leading-27 items-center border-1 border-white border-solid rounded-full min-w-40 min-h-40 justify-center items-center <?= ($tipo_item == "whatsapp") ? 'px-17': '';?>" href="<?=  ($tipo_item == "whatsapp") ? 'https://api.whatsapp.com/send/?phone=51'.$valor_item : $valor_item;?>" target="_blank" rel="nooponer">
+									<a class="flex gap-10 mb-20 text-19 leading-27 border-1 border-white border-solid rounded-full min-w-40 min-h-40 justify-center items-center <?= ($tipo_item == "whatsapp") ? 'px-17': '';?>" href="<?=  ($tipo_item == "whatsapp") ? 'https://api.whatsapp.com/send/?phone=51'.$valor_item : $valor_item;?>" target="_blank" rel="nooponer">
 										<?= get_icon($tipo_item,"w-auto h-18");?>
 										<?php if($tipo_item == "whatsapp"):?>
 											<span><?= $valor_item;?></span>
