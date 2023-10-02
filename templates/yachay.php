@@ -17,7 +17,7 @@ $link_boton = get_field("boton_link_adicional");
 $imagen2 = get_field("imagen_adicional");
 
 ?>
-<main class="container md:mt-150 mt-50">
+<main class="container md:mt-110 mt-50">
 	<section class=" flex flex-col md:mb-90 mb-35">
 		<div class="flex flex-col md:items-center justify-center md:mb-56 mb-30">
 			<?php 

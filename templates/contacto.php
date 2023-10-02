@@ -50,7 +50,7 @@
 				<div>
 					<?php if($titulo_horarios):?>
 						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-10 md:mb-20 items-center">
-							<?= get_icon("time","w-21");?>
+							<?= get_icon("time","w-21 h-21");?>
 							<?= $titulo_horarios;?>
 						</h2>
 					<?php endif;?>
@@ -77,7 +77,7 @@
 				<div class="mb-40 md:mb-0">
 					<?php if($titulo_contactanos):?>
 						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-20 items-center">
-							<?= get_icon("email","w-21");?>
+							<?= get_icon("email","w-21 h-21");?>
 							<?= $titulo_contactanos;?>
 						</h2>
 					<?php endif;?>
@@ -106,7 +106,7 @@
 			<div class="mb-41">
 				<?php if($titulo_encuentranos):?>
 					<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-20 items-center">
-						<?= get_icon("location","w-21");?>
+						<?= get_icon("location","w-21 h-21");?>
 						<?= $titulo_encuentranos;?>
 					</h2>
 				<?php endif;?>
