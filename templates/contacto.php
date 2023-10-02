@@ -121,7 +121,7 @@
 				<?= render_image($imagen_mapa_encuentranos, "w-full mb-28 md:mb-55");?>
 			<?php endif;?>
 
-			<div class="flex gap-36">
+			<div class="flex md:gap-36 gap-16">
 
 				<?php if($link_waze_encuentranos):?>
 					<a class="text-center w-full bg-cyan text-black font-semibold p-14 text-16 leading-24 flex justify-center items-center gap-10 hover:text-black" target="_blank" rel="nooponer" href="<?= $link_waze_encuentranos;?>">
