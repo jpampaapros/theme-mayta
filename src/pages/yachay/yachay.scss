@@ -1,0 +1,32 @@
+.mov-efect-bg-gradient{
+    position: relative;
+}
+
+
+.mov-efect-bg-gradient::before{
+
+    @media screen and (max-width: 767px) {     
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to bottom , transparent 0%, #000000 30%);
+        background-size: 400% 400%;
+        animation: animationFade2 2s linear;
+        z-index: 1;
+    }
+        
+}
+
+@keyframes animationFade2 {
+    0% {
+      opacity: 0;
+    }
+    
+    10% {
+        opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+}

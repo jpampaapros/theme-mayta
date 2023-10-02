@@ -4,7 +4,7 @@ $(".timeline").slick({
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 5000,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 1,
     focusOnSelect: true,
