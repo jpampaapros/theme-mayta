@@ -47,7 +47,7 @@ $cadena = '/en/';
         ?>
       </div>
 
-      <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 md:block hidden pri-menu">
+      <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-auto h-auto md:block hidden pri-menu icono">
       <?= $icono_red ?>
       </a>
       <div class="h-30 w-1 bg-white ml-10 mr-0 md:block hidden pri-menu"></div>
@@ -56,7 +56,7 @@ $cadena = '/en/';
       </div>
       <?php if ($urlActual == home_url('/')) : ?>
 
-          <a href="<?= $link_btn_r ?>" target="_blank" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+          <a href="<?= $link_btn_r ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
             <?= $text_btn_r ?>
           </a>
 
@@ -121,12 +121,12 @@ $cadena = '/en/';
     </div>
     <div class="flex flex-col items-center justify-center gap-24">
       <?php if ($link_btn) : ?>
-        <a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+        <a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
           <?= $text_btn ?>
         </a>
       <?php endif; ?>
       <?php if ($link_red) : ?>
-        <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 block md:hidden">
+        <a href="<?= $link_red ?>" target="_blank" rel="nooponer" class="w-20 h-20 block md:hidden icono">
           <?= $icono_red ?>
         </a>
       <?php endif; ?>

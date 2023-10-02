@@ -136,16 +136,16 @@ $adorno = get_field("adorno");
 		} ?>
 	<?php endforeach; ?>
 	<?php if ($imagen2) : ?>
-		<section class="sec-3 flex justify-center w-full mt-166 mb-16">
-			<div class="w-auto h-auto bg-cover relative border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
+		<section class="sec-3 flex justify-center w-full md:mt-166 mt-90 mb-16">
+			<div class="w-auto h-auto bg-cover relative border-27 md:border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
 				<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
-				<div class="absolute top-50 w-full flex items-center flex-col">
+				<div class="absolute md:top-50 top-30 w-full flex items-center flex-col">
 					<div class="inline-block bg-white py-3 md:py-7  h-auto w-auto px-10 md:px-16 text-center  mb-30 mix-blend-screen">
 						<h1 class="md:text-50 text-27 text-black font-bold md:pt-10 pt-5"><?= $titulo ?></h1>
 					</div>
 					<h2 class="md:text-50 text-25 mb-20 text-center"><?= $subtitulo ?></h2>
 					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= home_url(); ?>/wp-content/uploads/2023/09/bg-green-2.png)">
+						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>
