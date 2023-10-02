@@ -34,3 +34,7 @@
 .fondo{
   background-color: rgba(67, 99, 99, 0.9)
 }
+
+.icono p svg{
+  @apply md:w-25 md:h-25;
+}

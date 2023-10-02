@@ -41,17 +41,19 @@ $link_carta = get_field("boton_link_carta");
 				$cardCount = count($cards);
 				foreach ($cards as $key => $item) : ?>
 					<?php if ($switch == $cardCount) : ?>
-						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20 padding">
+						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20 md:w-420 ">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-14 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
-							<p class="text-18 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<p class="text-18 hidden md:block text-center opacity-1 text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+							
 						</div>
 					<?php else : ?>
-						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto padding">
+						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto md:w-420 w-auto ">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-14 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
-							<p class="text-18 text-center hidden text-white price<?= $key ?>"><?= $item['precio'] ?></p>
+							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<p class="text-18 hidden md:block text-center opacity-1 text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
+						<div class="bg-opacity-50 w-173 h-0.5 mx-auto mb-10 md:hidden block"></div>
 					<?php endif; ?>
 					<?php $switch++ ?>
 				<?php endforeach; ?>
@@ -61,7 +63,7 @@ $link_carta = get_field("boton_link_carta");
 	<section class="flex justify-center">
 
 		<div class="flex flex-col items-center justify-center py-30 text-white">
-			<div class="md:w-500 w-auto text-center">
+			<div class="md:w-500 w-auto text-center text-18">
 				<?= $carta ?>
 			</div>
 			
