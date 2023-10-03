@@ -28,7 +28,7 @@ $urlActual = get_permalink();
 	<?php endif; ?>
 	<?php if ($urlActual == home_url('/')) : ?>
 		<div class="flex justify-center mb-70 md:mb-89 md:hidden">
-			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black">
+			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black ani-zoom">
 				<?= $text_btn ?>
 			</a>
 		</div>
@@ -39,19 +39,19 @@ $urlActual = get_permalink();
 		<?php endif; ?>
 		<?php if ($urlActual == home_url('/mayta/')) : ?>
 		<div class="flex justify-center mb-70 md:mb-89">
-			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover ani-zoom">
 				<?= $text_btn ?>
 			</a>
 		</div>
 		<?php else : ?>
 			<div class="flex justify-center mb-70 md:mb-89">
-			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="md:w-260 w-full h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black">
+			<a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="md:w-260 w-full h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black ani-zoom">
 				<?= $text_btn ?>
 			</a>
 		</div>
 
 		<?php endif; ?>
-		<div class="hidden md:flex justify-center uppercase footer__menu mb-41">
+		<div class="hidden md:flex justify-center uppercase footer__menu mb-41 ani-menu">
 			<?php
 			wp_nav_menu(array(
 				'menu' => $menu_web,
