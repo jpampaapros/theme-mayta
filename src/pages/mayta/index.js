@@ -5,7 +5,13 @@ import gsap from "gsap";
 
 const scroller = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+    smooth: true,
+    // tablet: {
+    //     smooth: false
+    // },
+    // smartphone: {
+    //     smooth: false
+    // }
 });
 
 gsap.registerPlugin(ScrollTrigger);

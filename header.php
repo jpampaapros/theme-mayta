@@ -64,7 +64,7 @@ $cadena = '/en/';
 
       <div class="h-30 w-1 bg-white mx-10 mr-0 block md:hidden"></div>
 
-      <a href="#" class="w-32 h-32 block md:hidden hamburger">
+      <a href="#" class="w-32 h-32 block md:hidden hamburger [&>svg]:w-32 [&>svg]:h-32">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_60_433)">
             <path d="M32 14.6666H0V16H32V14.6666Z" fill="#DCD3CB" />
