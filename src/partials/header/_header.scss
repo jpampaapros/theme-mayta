@@ -1,4 +1,4 @@
-#menu-menu-principal li {
+#menu-menu-principal li{
   @apply list-none;
 
   a {
@@ -9,6 +9,21 @@
   }
   a[aria-current="page"] {
     @apply md:text-22 font-600 tracking-wider no-underline;
+  }
+
+}
+
+.ani-menu li {
+  @apply list-none;
+
+  a {
+    @apply font-normal no-underline;
+  }
+  a:hover {
+    @apply underline underline-offset-4;
+  }
+  a[aria-current="page"] {
+    @apply  font-600 tracking-wider no-underline;
   }
 
 }
@@ -37,4 +52,12 @@
 
 .icono p svg{
   @apply md:w-25 md:h-25;
+}
+
+.ani-zoom{
+  transition: transform 0.3s;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 }
