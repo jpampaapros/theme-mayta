@@ -121,7 +121,7 @@ $cadena = '/en/';
     </div>
     <div class="flex flex-col items-center justify-center gap-24">
       <?php if ($link_btn) : ?>
-        <a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover">
+        <a href="<?= $link_btn ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black">
           <?= $text_btn ?>
         </a>
       <?php endif; ?>
