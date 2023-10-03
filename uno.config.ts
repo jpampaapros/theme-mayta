@@ -11,7 +11,8 @@ export default defineConfig({
       './core/*.php',
       './partials/**/*.php',
       './header.php',
-      './footer.php'
+      './footer.php',
+      './404.php'
     ]
   },
   presets: [

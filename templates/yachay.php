@@ -41,7 +41,7 @@ $imagen2 = get_field("imagen_adicional");
 		</div>
 	</section>
 	<?php if ($grilla) : ?>
-		<section class="md:mb-150 mb-200">
+		<section class="md:mb-150 mb-69">
 			<?php foreach ($grilla as $key => $item) : ?>
 				<?php if ($key % 2 !== 0) : ?>
 					<div class="flex md:flex-row flex-col-reverse mb-130 relative">
@@ -88,7 +88,7 @@ $imagen2 = get_field("imagen_adicional");
 		</section>
 	<?php endif; ?>
 	<?php if ($cards) : ?>
-		<section class="flex md:flex-row flex-col md:mb-100 mb-90 md:gap-82 gap-5">
+		<section class="flex md:flex-row flex-col md:mb-100 mb-74 md:gap-82 gap-5">
 
 			<?php
 			$llave = 1;
@@ -158,7 +158,7 @@ $imagen2 = get_field("imagen_adicional");
 		</section>
 	<?php endif; ?>
 	<?php if ($imagen2) : ?>
-		<section class=" pt-120 flex justify-center w-full">
+		<section class="pt-78 md:pt-120 flex justify-center w-full">
 			<div class="w-auto h-auto bg-cover relative border-27 md:border-15 border-lightblack md:w-1095 md:h-395 w-315 h-420 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
 				<!-- <img src="<?= $imagen2['url'] ?>" class="w-1095 h-395" alt="<?= $imagen2['url'] ?>"> -->
 				<div class="absolute md:top-60 top-40 w-full flex md:items-start items-center flex-col md:pl-30 pl-17 pr-17 md:pr-0">

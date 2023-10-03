@@ -12,6 +12,7 @@ $cards = get_field("cards_carta");
 $carta = get_field("texto_carta");
 $boton_carta = get_field("boton_texto_carta");
 $link_carta = get_field("boton_link_carta");
+$boton_ver_marinaje = get_field("boton_texto_ver_marinaje");
 
 ?>
 <main class="container h-auto md:mt-150 mt-50">
@@ -19,7 +20,7 @@ $link_carta = get_field("boton_link_carta");
 		<div class="flex flex-col items-start absolute topp md:left-335  left--1 z-1" data-scroll-speed="1" data-scroll="1">
 			<h2 class="font-medium md:text-50 text-35 text-white md:mb-20 mb-10"> <?= $titulo ?></h2>
 			<div class="text-16 text-white md:mb-60 mb-10 font-medium"><?= $texto ?></div>
-			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 md:m-0 m-20 text-center h-auto md:w-250 w-180 text-18 font-medium  hover:font-600 hover:text-19 hover:tracking-wider" href="<?= $link ?>"><?= $boton ?></a>
+			<a class="border border-white bg-transparent pt-20 pb-16 md:px-40 md:m-0 m-20 text-center h-auto md:w-250 w-180 text-18 font-medium  hover:font-600 hover:text-19 hover:tracking-wider" target="_blank" rel="nooponer" href="<?= $link ?>"><?= $boton ?></a>
 		</div>
 		<?php 
 			$attr_image = array(
@@ -42,13 +43,13 @@ $link_carta = get_field("boton_link_carta");
 					<?php if ( $cardCount == $key + 1) : ?>
 						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20 md:px-98 ">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> <?php echo $boton_ver_marinaje;?></a>
 							<p class="text-18 hidden md:block text-center opacity-1 text-white price<?= $key ?>"><?= $item['precio'] ?></p>		
 						</div>
 					<?php else : ?>
 						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto md:px-98 w-auto ">
 							<h3 class="text-22 leading-33 mb-30"><?= $item['titulo'] ?></h3>
-							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> VER MARIDAJE</a>
+							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-30 maridaje" data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank"> <?php echo $boton_ver_marinaje;?></a>
 							<p class="text-18 hidden md:block text-center opacity-1 text-white price<?= $key ?>"><?= $item['precio'] ?></p>
 						</div>
 						<div class="bg-opacity-50 w-173 h-0.5 mx-auto mb-10 md:hidden block"></div>
