@@ -58,7 +58,7 @@ $adorno = get_field("adorno");
                         <?php if($item_anio):?>
                             <div class="text-35 leading-40 md:text-60 md:leading-73 font-medium mb-22 timeline__anio opacity-50 "><?= $item_anio;?></div>
                         <?php endif;?>
-                        <div class="flex items-center gap-13 md:gap-21 opacity-50 timeline__card  ">
+                        <div class="flex items-center gap-13 md:gap-21 opacity-50 timeline__card  min-h-150 md:min-h-170">
                             <?php if($item_image):?>
                                 <?php 
                                     $attr_image = array(

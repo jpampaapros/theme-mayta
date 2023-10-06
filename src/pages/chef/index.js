@@ -5,7 +5,7 @@ $(".timeline").slick({
     arrows: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     focusOnSelect: true,
     autoplay: true, 

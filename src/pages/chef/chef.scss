@@ -41,6 +41,9 @@
 }
 
 
+.timeline .slick-list{
+    @apply pr-0 md:pr-500;
+}
 
 .ani-opacity{
     animation: animationFade 2s linear;
