@@ -54,7 +54,11 @@ $cadena = '/en/';
       <div class="w-auto md:h-50 pri-menu">
         <?php echo do_shortcode("[selector_lenguajes]");?>
       </div>
-      <?php if ($urlActual == home_url('/')) : ?>
+
+      <?php 
+        $no_tiene_boton_de_reserva = get_field("no_tiene_boton_de_reserva");
+      ?>
+      <?php if (!$no_tiene_boton_de_reserva) : ?>
 
           <a href="<?= $link_btn_r ?>" target="_blank" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)" class="w-260 h-60 text-black md:flex hidden ml-10 items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black ani-zoom">
             <?= $text_btn_r ?>
