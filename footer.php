@@ -35,7 +35,7 @@ $urlActual = get_permalink();
 	<?php endif; ?>
 	<?php if ($urlActual != home_url('/')) : ?>
 		<?php if ($iconos) : ?>
-			<?= render_image($iconos, "absolute top-200 right-200 w-60 h-auto md:block hidden"); ?>
+			<?= render_image($iconos, "absolute top-0 right-200 w-60 h-auto md:block hidden"); ?>
 		<?php endif; ?>
 		<?php if ($urlActual == home_url('/mayta/')) : ?>
 		<div class="flex justify-center mb-70 md:mb-89 md:hidden">
