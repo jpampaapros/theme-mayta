@@ -62,7 +62,7 @@ $adorno = get_field("adorno");
                             <?php if($item_image):?>
                                 <?php 
                                     $attr_image = array(
-                                        "class" => "w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image "
+                                        "class" => "w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image shrink-0 object-cover"
                                     );
                                 ?>
                                 <?= render_image($item_image,$attr_image);?>
