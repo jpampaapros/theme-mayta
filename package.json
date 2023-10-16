@@ -44,6 +44,7 @@
     "partials/**/*",
     "templates/**/*",
     "public/**/*",
+    "404.php",
     "footer.php",
     "functions.php",
     "header.php",
