@@ -32,12 +32,30 @@
 }
 
 .preciaso {
-    @apply opacity-0;
-    transition: all 0.5s ease-in-out;
+    @apply opacity-100;
+
+    @screen md {
+        @apply md:opacity-0;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 .btn-experiencia:hover+.preciaso {
+    @apply opacity-100;
+}
 
+
+
+
+.maridaje-price {
     @apply opacity-100;
 
+    @screen md {
+        @apply md:opacity-0;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+.maridaje:hover+.maridaje-price {
+    @apply opacity-100;
 }
