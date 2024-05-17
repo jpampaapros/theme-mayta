@@ -48,8 +48,7 @@ $urlActual = get_permalink();
 		<?php else: ?>
 			<div class="flex justify-center mb-70 md:mb-89 md:hidden">
 				<a href="<?= $link_btn ?>" target="_blank"
-					style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/btn-reserve.jpg)"
-					class="md:w-260 w-full h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-1 border-white uppercase bg-cover focus:text-black ani-zoom">
+					class="md:w-260 w-full h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-0 border-white uppercase bg-cover focus:text-black ani-zoom text-coffee3 bg-coffee4 hover:text-coffee3 hover:bg-coffee4">
 					<?= $text_btn ?>
 				</a>
 			</div>
