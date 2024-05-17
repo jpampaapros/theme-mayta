@@ -125,7 +125,9 @@ export default defineConfig({
       cyan: '#00CDFE',
       black: '#000000',
       lightblack: '#374141',
-      green3: '#436363;'
+      green3: '#436363;',
+      coffee3: '#dcd3cb',
+      coffee4: '#a45d43',
     },
     fontFamily: {
       'main': ['GeogrotesqueCyr', 'sans-serif'],
