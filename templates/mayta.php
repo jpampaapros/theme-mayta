@@ -28,71 +28,27 @@ $adorno = get_field("adorno");
 			<?= render_image($adorno, "md:w-375 md:h-457 w-165 h-201") ?>
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
-		<div class="md:w-50% flex justify-end items-center texto md:h-auto md:text-left text-right mt-49 md:mt-0" data-scroll-speed="1" data-scroll="1">
+		<div class="md:w-50% flex justify-end items-center texto md:h-auto md:text-left text-right mt-49 md:mt-0"
+			data-scroll-speed="1" data-scroll="1">
 			<?= $texto ?>
 		</div>
 	</section>
 	<section class="flex justify-center md:pt-98 md:pt-57 md:pb-52 py-72 md:pb-75">
 		<div class="md:w-79 md:h-70 w-42 h-38 ">
-			<svg width="80" height="70" class="w-full h-full" viewBox="0 0 80 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<g id="Group 44">
-					<g id="Vector">
-						<path d="M79.516 70H64.386L58.0659 0H73.1959L79.516 70ZM66.9715 67.223H76.5475L70.6104 2.77702H61.0345L66.9715 67.223Z" fill="black" />
-						<path d="M79.516 70H64.386L58.0659 0H73.1959L79.516 70ZM66.9715 67.223H76.5475L70.6104 2.77702H61.0345L66.9715 67.223Z" fill="url(#paint0_linear_171_1824)" />
-					</g>
-					<g id="Vector_2">
-						<path d="M15.6441 70H0.51416L6.83427 0H21.9642L15.6441 70ZM3.57846 67.223H13.1544L18.9957 2.77702H9.41977L3.57846 67.223Z" fill="black" />
-						<path d="M15.6441 70H0.51416L6.83427 0H21.9642L15.6441 70ZM3.57846 67.223H13.1544L18.9957 2.77702H9.41977L3.57846 67.223Z" fill="url(#paint1_linear_171_1824)" />
-					</g>
-					<g id="Vector_3">
-						<path d="M12.9367 1.25873L6.83105 68.4922L9.59669 68.7433L15.7023 1.50988L12.9367 1.25873Z" fill="black" />
-						<path d="M12.9367 1.25873L6.83105 68.4922L9.59669 68.7433L15.7023 1.50988L12.9367 1.25873Z" fill="url(#paint2_linear_171_1824)" />
-					</g>
-					<g id="Vector_4">
-						<path d="M67.0747 1.26191L64.3091 1.5127L70.4057 68.7462L73.1713 68.4954L67.0747 1.26191Z" fill="black" />
-						<path d="M67.0747 1.26191L64.3091 1.5127L70.4057 68.7462L73.1713 68.4954L67.0747 1.26191Z" fill="url(#paint3_linear_171_1824)" />
-					</g>
-					<g id="Vector_5">
-						<path d="M51.0745 50.7524H29.0498L24.6449 2.77702H18.9951L20.5273 0H30.0074L34.1251 45.1026H45.9992L50.0211 0H59.597V2.77702H55.4794L51.0745 50.7524Z" fill="black" />
-						<path d="M51.0745 50.7524H29.0498L24.6449 2.77702H18.9951L20.5273 0H30.0074L34.1251 45.1026H45.9992L50.0211 0H59.597V2.77702H55.4794L51.0745 50.7524Z" fill="url(#paint4_linear_171_1824)" />
-					</g>
+			<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1385.39 1079.52">
+				<g id="Capa_1-2" data-name="Capa 1">
+					<polygon fill="#a45d43"
+						points="1385.39 1079.52 1287.49 0 866.72 0 803.61 695.81 581.78 695.81 518.67 0 97.9 0 0 1079.52 233.96 1079.52 308.29 260.01 355.63 781.98 575.8 781.98 575.8 1079.52 809.59 1079.52 809.59 781.98 1029.76 781.98 1077.1 260.01 1151.43 1079.52 1385.39 1079.52" />
 				</g>
-				<defs>
-					<linearGradient id="paint0_linear_171_1824" x1="63.6616" y1="6.08696" x2="93.6411" y2="19.0563" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#A45D43" />
-						<stop offset="0.479167" stop-color="#F5C1AC" />
-						<stop offset="1" stop-color="#A45D43" />
-					</linearGradient>
-					<linearGradient id="paint1_linear_171_1824" x1="6.10983" y1="6.08696" x2="36.0893" y2="19.0563" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#A45D43" />
-						<stop offset="0.479167" stop-color="#F5C1AC" />
-						<stop offset="1" stop-color="#A45D43" />
-					</linearGradient>
-					<linearGradient id="paint2_linear_171_1824" x1="8.66432" y1="50.9749" x2="11.9205" y2="51.1752" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#A45D43" />
-						<stop offset="0.479167" stop-color="#F5C1AC" />
-						<stop offset="1" stop-color="#A45D43" />
-					</linearGradient>
-					<linearGradient id="paint3_linear_171_1824" x1="65.5607" y1="7.29366" x2="70.1581" y2="7.14455" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#A45D43" />
-						<stop offset="0.479167" stop-color="#F5C1AC" />
-						<stop offset="1" stop-color="#A45D43" />
-					</linearGradient>
-					<linearGradient id="paint4_linear_171_1824" x1="29.5869" y1="4.41325" x2="59.1914" y2="37.8488" gradientUnits="userSpaceOnUse">
-						<stop stop-color="#A45D43" />
-						<stop offset="0.479167" stop-color="#F5C1AC" />
-						<stop offset="1" stop-color="#A45D43" />
-					</linearGradient>
-				</defs>
 			</svg>
 		</div>
 
 	</section>
 
 	<?php $switch = 1; ?>
-	<?php foreach ($grilla as $item) : ?>
+	<?php foreach ($grilla as $item): ?>
 
-		<?php if ($switch == 1) : ?>
+		<?php if ($switch == 1): ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
 				<div class="h-auto w-50% flex justify-center items-center">
 					<?php
@@ -106,13 +62,17 @@ $adorno = get_field("adorno");
 					?>
 					<?= render_image($item['imagen'], $attr_image) ?>
 				</div>
-				<div class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white tracking-wide" data-scroll-speed="1" data-scroll="1">
+				<div
+					class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white tracking-wide"
+					data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
-		<?php else : ?>
+		<?php else: ?>
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
-				<div class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white  tracking-wide" data-scroll-speed="1" data-scroll="1">
+				<div
+					class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white  tracking-wide"
+					data-scroll-speed="1" data-scroll="1">
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
@@ -135,17 +95,22 @@ $adorno = get_field("adorno");
 			$switch = 1;
 		} ?>
 	<?php endforeach; ?>
-	<?php if ($imagen2) : ?>
+	<?php if ($imagen2): ?>
 		<section class="sec-3 flex justify-center w-full md:mt-166 mt-90 mb-16">
-			<div class="w-auto h-auto bg-cover relative border-27 md:border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden" style="background-image: url(<?= $imagen2['url'] ?>)">
+			<div
+				class="w-auto h-auto bg-cover relative border-27 md:border-15 border-lightblack md:w-1095 md:h-395 w-315 h-325 overflow-hidden"
+				style="background-image: url(<?= $imagen2['url'] ?>)">
 				<!-- <img src="" class="md:w-1095 md:h-395 w-315 h-325"> -->
 				<div class="absolute md:top-50 top-30 w-full flex items-center flex-col">
-					<div class="inline-block bg-white py-3 md:py-7  h-auto w-auto px-10 md:px-16 text-center  mb-30 mix-blend-screen">
+					<div
+						class="inline-block bg-white py-3 md:py-7  h-auto w-auto px-10 md:px-16 text-center  mb-30 mix-blend-screen">
 						<h1 class="md:text-50 text-27 text-black font-bold md:pt-10 pt-5"><?= $titulo ?></h1>
 					</div>
 					<h2 class="md:text-50 text-25 mb-20 text-center"><?= $subtitulo ?></h2>
-					<?php if ($link_boton) : ?>
-						<a href="<?= $link_boton ?>" class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover" style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/bg-green-2.png)">
+					<?php if ($link_boton): ?>
+						<a href="<?= $link_boton ?>"
+							class="h-auto pt-20 pb-16 px-40 text-18 font-medium border border-white hover:font-600 hover:text-19 hover:tracking-wider bg-cover"
+							style="background-image:url(<?= site_url("/") ?>/wp-content/uploads/2023/09/bg-green-2.png)">
 							<?= $boton ?>
 						</a>
 					<?php endif; ?>
