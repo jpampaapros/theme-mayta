@@ -52,29 +52,25 @@ $preciaso = get_field("precio_maridaje");
 				$cardCount = count($cards);
 				foreach ($cards as $key => $item): ?>
 					<?php if ($cardCount == $key + 1): ?>
-						<div class="flex flex-col text-center md:h-180 h-auto w-auto pt-20 md:px-98 ">
-							<h3 class="text-22 leading-33 mb-20 md:mb-30">
+						<div class="flex flex-col text-center md:h-120 h-auto w-auto pt-20 md:px-98 ">
+							<h3
+								class="text-22 leading-33 mb-20 hover:opacity-90 hover:underline hover:underline-offset-4 cursor-pointer md:mb-30 maridaje">
 								<?= $item['titulo'] ?>
 							</h3>
-							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-10 md:mb-30 maridaje"
-								data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank">
-								<?php echo $boton_ver_marinaje; ?>
-							</a>
+
 							<p class="text-18  md:block text-center opacity-100 text-white maridaje-price price<?= $key ?> md:opacity-1">
 								<?= $item['precio'] ?>
 							</p>
 						</div>
 					<?php else: ?>
-						<div class="flex flex-col text-center pt-20 bordes md:h-180 h-auto md:px-98 w-auto ">
-							<h3 class="text-22 leading-33 mb-20 md:mb-30">
+						<div class="flex flex-col text-center pt-20 bordes md:h-120 h-auto md:px-98 w-auto ">
+							<h3
+								class="text-22 leading-33 mb-20 md:mb-30 hover:opacity-90 hover:underline hover:underline-offset-4 cursor-pointer maridaje">
 								<?= $item['titulo'] ?>
 							</h3>
-							<a class="text-14 hover:opacity-90 hover:underline hover:underline-offset-4 mb-10 md:mb-30 maridaje"
-								data-id="<?= $key ?>" href="<?= $item['link'] ?>" target="_blank">
-								<?php echo $boton_ver_marinaje; ?>
-							</a>
+
 							<p
-								class="text-18  md:block text-center opacity-100 text-white maridaje-price price<?= $key ?> md:opacity-1  mb-20 md:mb-0">
+								class="text-18  md:block text-center opacity-100 text-white maridaje-price price<?= $key ?> md:opacity-1 mb-20 md:mb-0">
 								<?= $item['precio'] ?>
 							</p>
 						</div>
