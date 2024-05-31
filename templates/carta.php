@@ -17,9 +17,10 @@ $preciaso = get_field("precio_maridaje");
 
 ?>
 <main class="container h-auto md:mt-150 mt-50">
-	<section class="relative flex justify-center md:mb-150 mb-200">
-		<div class="flex flex-col items-start absolute topp md:left-335  left--1 z-1" data-scroll-speed="1" data-scroll="1">
-			<h2 class="font-medium md:text-50 text-35 text-white md:mb-20 mb-10">
+	<section class="relative flex justify-center flex-col-reverse md:flex-row md:mb-150 mb-50">
+		<div class="flex flex-col items-center -mt-80 md:items-start md:absolute topp md:left-335 md:mt-0 left--1 z-1"
+			data-scroll-speed="1" data-scroll="1">
+			<h2 class="font-medium  md:text-50 text-35 text-white md:mb-20 mb-10">
 				<?= $titulo ?>
 			</h2>
 			<div class="text-16 text-white md:mb-60 mb-10 font-medium">
@@ -29,7 +30,7 @@ $preciaso = get_field("precio_maridaje");
 				target="_blank" rel="nooponer" href="<?= $link ?>">
 				<?= $boton ?>
 			</a>
-			<p class="text-18  text-center opacity-0 text-white preciaso ml-75 mt-0 md:block  md:ml-90 md:mt-40">
+			<p class="text-18  text-center opacity-0 text-white preciaso ml-0 mt-0 md:block  md:ml-90 md:mt-40">
 				<?= $preciaso ?>
 			</p>
 		</div>
