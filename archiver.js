@@ -1,6 +1,6 @@
 import fs from 'fs'
 import archiver from 'archiver'
-import pjson from './package.json' assert { type: "json" }
+import pjson from './package.json' with { type: "json" }
 import path from 'path'
 import { fileURLToPath } from 'url'
 
