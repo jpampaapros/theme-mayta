@@ -28,7 +28,19 @@
 }
 
 .topp {
-    @apply md:top-352 top-260;
+    top: calc(100vw * 90 / var(--width-base));
+
+    @screen md {
+        @apply md:top-0;
+    }
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.bg-banner-shadow {
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .preciaso {
@@ -44,8 +56,17 @@
     @apply opacity-100;
 }
 
+.h-carta {
+    height: calc(100vw * 700 / var(--width-base));
 
+    @screen md {
+        height: calc(100vw * 700 / var(--width-base));
+    }
+}
 
+.hidden-block {
+    display: none;
+}
 
 .maridaje-price {
     @apply opacity-100;

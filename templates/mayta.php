@@ -19,7 +19,7 @@ $adorno = get_field("adorno");
 			<?php
 			$attr_image = array(
 				"class" => "absolute md:top-40 md:right-70 top-15 right-30 w-300 md:w-654 h-296 md:h-682 objec-cover",
-				"data-scroll-speed" => "4",
+				"data-scroll-speed" => "0",
 				"data-scroll" => "1",
 				"data-scroll-class" => "ani-opacity",
 				"data-scroll-delay" => "1",
@@ -29,7 +29,7 @@ $adorno = get_field("adorno");
 			<?= render_image($imagen, $attr_image) ?>
 		</div>
 		<div class="md:w-50% flex justify-end items-center texto md:h-auto md:text-left text-right mt-49 md:mt-0"
-			data-scroll-speed="1" data-scroll="1">
+			data-scroll-speed="0" data-scroll="0">
 			<?= $texto ?>
 		</div>
 	</section>
@@ -54,7 +54,7 @@ $adorno = get_field("adorno");
 					<?php
 					$attr_image = array(
 						"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
-						"data-scroll-speed" => "4",
+						"data-scroll-speed" => "0",
 						"data-scroll" => "1",
 						"data-scroll-class" => "ani-opacity",
 						"data-scroll-delay" => "1",
@@ -64,7 +64,7 @@ $adorno = get_field("adorno");
 				</div>
 				<div
 					class="h-auto w-50% md:pr-70 pr-30 md:text-left text-right  flex justify-end items-center md:text-18 text-13 text-white tracking-wide"
-					data-scroll-speed="1" data-scroll="1">
+					data-scroll-speed="0" data-scroll="0">
 					<?= $item['texto'] ?>
 				</div>
 			</section>
@@ -72,14 +72,14 @@ $adorno = get_field("adorno");
 			<section class="md:mx-150 flex md:flex-row flex-row-reverse mb-90 md:mb-0">
 				<div
 					class="h-auto md:w-55% w-50% md:pl-130 pl-30  flex justify-start items-center md:text-18 text-13 text-white  tracking-wide"
-					data-scroll-speed="1" data-scroll="1">
+					data-scroll-speed="0" data-scroll="0">
 					<?= $item['texto'] ?>
 				</div>
 				<div class="h-auto md:w-45% w-50% flex justify-center items-center">
 					<?php
 					$attr_image = array(
 						"class" => "md:w-395 md:h-621 w-171 h-269 shrink-0 object-cover",
-						"data-scroll-speed" => "4",
+						"data-scroll-speed" => "0",
 						"data-scroll" => "1",
 						"data-scroll-class" => "ani-opacity",
 						"data-scroll-delay" => "1",
