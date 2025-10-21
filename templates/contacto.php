@@ -16,12 +16,12 @@ $link_waze_encuentranos = get_field("link_waze_encuentranos");
 $link_google_encuentranos = get_field("link_google_encuentranos");
 ?>
 
-<main class="md:mt-150 mt-50">
-	<article class="md:mx-133 md:flex flex-col md:flex-row gap-140 px-16 md:px-0">
-		<section class="md:w-700 shrink-0">
+<main class="md:mt-0 mt-50 h-screencontacto overflow-hidden">
+	<article class="md:mx-133 md:flex flex-col md:flex-row gap-50 px-16 md:px-0 h-screencontacto overflow-hidden">
+		<section class="md:w-700 shrink-0 ">
 			<?php
 			$attr_image = array(
-				"class" => "w-full mb-50 md:mb-0 hidden md:block",
+				"class" => "w-full h-full mb-50 md:mb-0 hidden md:block object-cover object-bottom",
 				"data-scroll-speed" => "0",
 				"data-scroll" => "0",
 				"data-scroll-class" => "ani-opacity",
@@ -41,15 +41,15 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 			<?= render_image($imagen_movil_contacto, $attr_image2); ?>
 		</section>
 		<section class="w-full" data-scroll-speed="0" data-scroll="0">
-
 			<?php if ($titulo_contacto): ?>
-				<h2 class="text-44 md:text-75 leading-60 md:leading-90 title-before pb-14 md:pb-10 font-medium mb-38 md:mb-30"><?= $titulo_contacto; ?></h2>
+				<h2 class="text-44 md:text-30 leading-60 md:leading-40 title-before pb-14 md:pb-0 font-medium mb-38 md:mb-5"><?= $titulo_contacto; ?></h2>
 			<?php endif; ?>
 
-			<div class="md:flex flex-col gap-15">
+
+			<div class="md:flex flex-col md:gap-0 gap-15">
 				<div>
 					<?php if ($titulo_horarios): ?>
-						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-10 md:mb-20 items-center">
+						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-10 md:mb-5 items-center">
 							<?= get_icon("time", "w-21 h-21"); ?>
 							<?= $titulo_horarios; ?>
 						</h2>
@@ -61,7 +61,7 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 								$item_title = $item["titulo"];
 								$item_text = $item["texto"];
 								?>
-								<div class="mb-28 text-18 leading-27">
+								<div class="mb-5 text-18 leading-27">
 									<div class="font-semibold md:mb-3">
 										<?= $item_title; ?>
 									</div>
@@ -74,7 +74,7 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 					<?php endif; ?>
 				</div>
 
-				<div class="mb-40 md:mt-20">
+				<div class="mb-0 md:mt-0">
 					<?php if ($titulo_contactanos): ?>
 						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-20 items-center">
 							<?= get_icon("email", "w-21 h-21"); ?>
@@ -103,11 +103,12 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 
 				</div>
 			</div>
-			<div class="mb-41 flex md:flex-row flex-col justify-between">
+
+			<div class="md:mb-1 mb-41 flex md:flex-row flex-col justify-between">
 
 				<div class="md:w-50%">
 					<?php if ($titulo_encuentranos): ?>
-						<h2 class="flex gap-10 font-semibold text-25 leading-30 mb-20 items-center">
+						<h2 class="flex gap-5 font-semibold text-25 leading-30 mb-10 items-center">
 							<?= get_icon("location", "w-21 h-21"); ?>
 							<?= $titulo_encuentranos; ?>
 						</h2>
@@ -138,10 +139,10 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 			</div>
 
 
-
 			<?php if ($imagen_mapa_encuentranos): ?>
-				<?= render_image($imagen_mapa_encuentranos, "w-full mb-28 md:mb-55"); ?>
+				<?= render_image($imagen_mapa_encuentranos, "w-full mb-28 md:mb-0 h-full object-cover object-bottom"); ?>
 			<?php endif; ?>
+
 
 			<div class="md:hidden flex md:gap-36 gap-16 w-full">
 

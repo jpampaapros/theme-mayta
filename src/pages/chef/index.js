@@ -5,10 +5,10 @@ $(".timeline").slick({
     arrows: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     focusOnSelect: true,
-    autoplay: true, 
+    autoplay: true,
     autoplaySpeed: 650,
     pauseOnHover: false,
     pauseOnFocus: false,
@@ -16,7 +16,7 @@ $(".timeline").slick({
         {
             breakpoint: 768,
             settings: {
-                slidesToShow: 2,
+                slidesToShow: 1,
                 slidesToScroll: 1,
             }
         },

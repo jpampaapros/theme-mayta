@@ -56,22 +56,22 @@ $adorno = get_field("adorno");
                     ?>
                     <div>
                         <?php if ($item_anio): ?>
-                            <div class="text-35 leading-40 md:text-60 md:leading-73 font-medium mb-22 timeline__anio opacity-50 "><?= $item_anio; ?></div>
+                            <div class="text-45 leading-40 md:text-60 md:leading-73 font-medium mb-22 timeline__anio opacity-50 "><?= $item_anio; ?></div>
                         <?php endif; ?>
-                        <div class="flex items-center gap-13 md:gap-21 opacity-50 timeline__card  min-h-150 md:min-h-200">
+                        <div class="flex items-start gap-13 md:gap-21 opacity-50 timeline__card  min-h-150 md:min-h-200">
                             <?php if ($item_image): ?>
                                 <?php
                                 $attr_image = array(
-                                    "class" => "w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image shrink-0 object-cover"
+                                    "class" => "w-68 md:w-130 h-76 md:h-130 border-solid border-white border-1 timeline__image shrink-0 object-contain"
                                 );
                                 ?>
                                 <?= render_image($item_image, $attr_image); ?>
                             <?php endif; ?>
                             <?php if ($item_text): ?>
-                                <div class="text-16 md:text-22 md:pr-72 pr-12"><?= $item_text; ?></div>
+                                <div class="text-16 md:text-25 md:pr-72 pr-12"><?= $item_text; ?></div>
                             <?php endif; ?>
                         </div>
-                        <div class="flex mt-40 md:mt-68 items-center pr-20">
+                        <div class="flex mt-40 md:mt-68 items-center md:pr-40 pr-90">
                             <div class="indicator-circle rounded-full w-17 md:w-29 h-17 md:h-29 shrink-0 border-solid border-white border-1"></div>
                             <div class="indicator-line ml-20 bg-lightblack shrink-0  h-2"></div>
                             <!-- w-130 md:w-281 -->

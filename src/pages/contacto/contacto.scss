@@ -1,0 +1,12 @@
+.first-block {
+    img {
+        width: calc(100vw * 300 / var(--width-base));
+    }
+}
+
+.h-screencontacto {
+    @screen md {
+        height: 50vh;
+    }
+
+}

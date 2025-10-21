@@ -10,7 +10,7 @@ $menu_web = count($menu_locations) > 0 ? $menu_locations["primary"] : null;
 $urlActual = get_permalink();
 
 ?>
-<footer class="container md:mt-150 mt-50 <?= ($urlActual == home_url('/')) ? 'fixed bottom-20 left-0' : 'relative' ?>">
+<footer class="container md:mt-120 mt-50 <?= ($urlActual == home_url('/')) ? 'fixed bottom-20 left-0' : 'relative' ?>">
 	<?php if (strpos($urlActual, "contacto") !== false): ?>
 		<div class="border-t-1 border-white justify-center text-white text-18 py-50 md:hidden flex ">
 			<?php if ($links_footer): ?>

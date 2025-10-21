@@ -1,64 +1,81 @@
-.text-chef p{
+.text-chef p {
     @apply mb-20;
 }
 
-.timeline{
+
+.timeline {
     @apply w-500 md:w-1970;
 
     .timeline__anio,
     .timeline__card,
-    .indicator-circle{
+    .indicator-circle {
         @apply transition linear duration-300;
     }
-    
-    .slick-slide{
+
+    .timeline__card {
+        img {
+            width: calc(100vw * 100 / var(--width-base));
+            height: calc(100vw * 100 / var(--width-base));
+        }
+
+        @screen md {
+            gap: calc(100vw * 50 / var(--width-base));
+
+            img {
+                width: calc(100vw * 230 / var(--width-base));
+                height: calc(100vw * 170 / var(--width-base));
+            }
+        }
+    }
+
+    .slick-slide {
         @apply cursor-pointer;
     }
 
-    .indicator-line{
+    .indicator-line {
         width: 0;
         transition: width linear .5s;
     }
 
-    & .slick-current{
+    & .slick-current {
 
-        .indicator-circle{
+        .indicator-circle {
             @apply bg-white;
         }
 
-        .indicator-line{
+        .indicator-line {
             @apply w-130 md:w-281;
         }
 
-        .opacity-50{
+        .opacity-50 {
             @apply opacity-100;
         }
 
-        .indicator-line.bg-lightblack{
+        .indicator-line.bg-lightblack {
             @apply bg-white;
         }
     }
 }
 
 
-.timeline .slick-list{
+.timeline .slick-list {
     @apply pr-0 md:pr-500;
 }
 
-.ani-opacity{
+.ani-opacity {
     animation: animationFade 2s linear;
 }
 
 @keyframes animationFade {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
-    
+
     10% {
         opacity: 0;
     }
-    
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
 }
