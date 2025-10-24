@@ -66,7 +66,7 @@ $urlActual = get_permalink();
 		</div>
 
 		<?php if ($redes): ?>
-			<div class="md:flex justify-center items-center mb-120 hidden">
+			<div class="md:flex justify-center items-center mb-20 hidden">
 				<?php foreach ($redes as $item): ?>
 					<?php
 					$item_tipo = $item['tipo'];

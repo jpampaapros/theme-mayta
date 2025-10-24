@@ -40,7 +40,7 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 			<?= render_image($imagen_contacto, $attr_image); ?>
 			<?= render_image($imagen_movil_contacto, $attr_image2); ?>
 		</section>
-		<section class="w-full" data-scroll-speed="0" data-scroll="0">
+		<section class="w-full h-full" data-scroll-speed="0" data-scroll="0">
 			<?php if ($titulo_contacto): ?>
 				<h2 class="text-44 md:text-30 leading-60 md:leading-40 title-before pb-14 md:pb-0 font-medium mb-38 md:mb-5"><?= $titulo_contacto; ?></h2>
 			<?php endif; ?>
@@ -140,7 +140,9 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 
 
 			<?php if ($imagen_mapa_encuentranos): ?>
-				<?= render_image($imagen_mapa_encuentranos, "w-full mb-28 md:mb-0 h-full object-cover object-bottom"); ?>
+				<div class="overflow-hidden h-100% relative">
+					<?= render_image($imagen_mapa_encuentranos, "absolute inset-0 w-full mb-28 md:mb-0 h-full object-cover object-bottom"); ?>
+				</div>
 			<?php endif; ?>
 
 
