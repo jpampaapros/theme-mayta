@@ -1,5 +1,5 @@
 <?php
-//Template name: Chef
+//Template name: Libro
 get_header();
 ?>
 <?php
@@ -16,7 +16,6 @@ $adorno = get_field("adorno");
         <div class="text-white  text-16"><?= $titulo ?></div>
         <h1 class="font-medium text-white text-44 md:text-75 "><?= $nombre ?></h1>
         <div class="text-16 md:text-25 font-medium text-white pb-12 md:pb-0"><?= $posicion ?></div>
-        <div class="w-62 h-1 bg-white mb-79"></div>
     </section>
     <section class="sec-1 md:flex md:mx-65 mb-84 md:mb-250">
         <div class="md:w-50% relative">
