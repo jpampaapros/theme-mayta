@@ -36,7 +36,6 @@ $adorno = get_field("adorno");
                 <div class="text-white "><?= $titulo ?></div>
                 <h1 class="text-75 font-medium text-white"><?= $nombre ?></h1>
                 <div class="text-25 font-medium text-white"><?= $posicion ?></div>
-                <div class="w-62 h-1 bg-white mb-79"></div>
             </div>
             <div class="text-18 leading-27 text-white  text-chef"><?= $texto ?></div>
             <a href="<?php echo $boton['url'] ?>" class="flex bg-[#A45D43] text-white"
