@@ -140,8 +140,8 @@ $link_google_encuentranos = get_field("link_google_encuentranos");
 
 
 			<?php if ($imagen_mapa_encuentranos): ?>
-				<div class="overflow-hidden h-100% relative">
-					<?= render_image($imagen_mapa_encuentranos, "absolute inset-0 w-full mb-28 md:mb-0 h-full object-cover object-bottom"); ?>
+				<div class="overflow-hidden relative" style="height: 100%">
+					<?= render_image($imagen_mapa_encuentranos, "absolute inset-0 w-full mb-28 md:mb-0 h-full object-cover object-center"); ?>
 				</div>
 			<?php endif; ?>
 

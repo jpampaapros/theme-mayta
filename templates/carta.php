@@ -16,7 +16,7 @@ $boton_ver_marinaje = get_field("boton_texto_ver_marinaje");
 $preciaso = get_field("precio_maridaje");
 
 ?>
-<main class="h-auto md:mt-100 mt-0">
+<main class="h-auto  mt-0">
 	<section class="relative flex justify-center flex-col-reverse md:flex-row md:mb-100 mb-50 h-carta">
 		<div class="flex flex-col items-center justify-center h-full -mt-80 md:items-center md:absolute absolute topp md:left-0 md:right-0 md:bottom-0 md:m-auto left--1 z-20 w-full"
 			data-scroll-speed=" 0" data-scroll="0">
