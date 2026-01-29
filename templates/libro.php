@@ -15,7 +15,7 @@ $adorno = get_field("adorno");
     <section class="block md:hidden pt-37">
         <div class="text-white  text-16"><?= $titulo ?></div>
         <h1 class="font-medium text-white text-44 md:text-75 "><?= $nombre ?></h1>
-        <div class="text-16 md:text-25 font-medium text-white pb-12 md:pb-0"><?= $posicion ?></div>
+        <div class="text-16 md:text-25 font-medium text-white pb-12 md:pb-0 mb-79"><?= $posicion ?></div>
     </section>
     <section class="sec-1 md:flex md:mx-65 mb-84 md:mb-250">
         <div class="md:w-50% relative">
@@ -35,7 +35,7 @@ $adorno = get_field("adorno");
             <div class="hidden md:block">
                 <div class="text-white "><?= $titulo ?></div>
                 <h1 class="text-75 font-medium text-white"><?= $nombre ?></h1>
-                <div class="text-25 font-medium text-white"><?= $posicion ?></div>
+                <div class="text-25 font-medium text-white mb-79"><?= $posicion ?></div>
             </div>
             <div class="text-18 leading-27 text-white  text-chef"><?= $texto ?></div>
             <a href="<?php echo $boton['url'] ?>" class="flex bg-[#A45D43] text-white"
