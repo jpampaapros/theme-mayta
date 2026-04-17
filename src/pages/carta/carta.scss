@@ -57,7 +57,7 @@
 }
 
 .h-carta {
-    height: calc(100vw * 700 / var(--width-base));
+    height: calc(100vw * 900 / var(--width-base));
 
     @screen md {
         height: calc(100vw * 700 / var(--width-base));
