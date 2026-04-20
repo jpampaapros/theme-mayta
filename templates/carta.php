@@ -5,6 +5,7 @@ get_header();
 <?php
 $imagen = get_field("imagen_de_fondo_banner");
 $titulo = get_field("titulo_banner");
+$precio_titulo = get_field("precio_titulo");
 $texto = get_field("texto_banner");
 $boton = get_field("boton_texto_banner");
 $link = get_field("boton_link_banner");
@@ -24,9 +25,19 @@ $preciaso = get_field("precio_maridaje");
 			class="flex flex-col items-center justify-center h-full -mt-80 md:items-center md:absolute absolute top-90 md:left-0 md:right-0 md:bottom-0 md:m-auto left--1 z-20 w-full"
 			data-scroll-speed=" 0" data-scroll="0">
 
-			<h2 class="font-medium  md:text-50 text-35 text-white md:mb-20 mb-10">
-				<?= $titulo ?>
-			</h2>
+			<div class="group  md:mb-20 mb-20 ">
+
+				<h2 class=" md:text-50 text-35 text-white md:mb-20 mb-10 font-medium cursor-pointer hover:underline ">
+					<?= $titulo ?>
+				</h2>
+
+				<?php if ($precio_titulo): ?>
+					<div
+						class="text-18 md:text-24 text-whitefont-medium text-center group-hover:opacity-100 opacity-0 duration-300 preciaso">
+						<?= $precio_titulo ?>
+					</div>
+				<?php endif; ?>
+			</div>
 
 			<div
 				class="text-12 md:text-16 text-white md:mb-20 mb-10 font-medium text-center flex flex-col gap-20 md:w-60% w-auto mx-20">
@@ -48,7 +59,8 @@ $preciaso = get_field("precio_maridaje");
 			<?php if ($cards): ?>
 
 				<?php if ($titulo_maridajes): ?>
-					<div class="text-35 text-center underline underline-offset-8 mb-20 mt-20 text-white font-medium md:mb-30">
+					<div
+						class="text-26 md:text-35 text-center underline underline-offset-8 mb-20 mt-20 text-white font-medium md:mb-30">
 						<?= $titulo_maridajes ?>
 					</div>
 				<?php endif; ?>
