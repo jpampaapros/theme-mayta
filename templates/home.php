@@ -15,14 +15,15 @@ $banner2 = get_field("imagen_mobile_banner");
 
 
   <?php if ($descripcion): ?>
-    <div class="absolute top-45% left-50% transform -translate-x-50% -translate-y-50% text-center text-18 md:text-40">
+    <div
+      class="w-90% md:w-60% absolute top-40% md:top-45% left-50% transform -translate-x-50% -translate-y-50% text-center text-24 md:text-40 font-bold">
       <?= $descripcion ?>
     </div>
   <?php endif; ?>
 
   <?php if ($boton_conoce_mas): ?>
     <a href="<?= $boton_conoce_mas['url'] ?>" target="<?= $boton_conoce_mas['target'] ?>"
-      class="absolute top-65% left-50% transform -translate-x-50% -translate-y-50% w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-0 border-white uppercase bg-cover focus:text-black  text-coffee3 bg-coffee4 hover:scale-110 transition-transform duration-300">
+      class="absolute top-60% left-50% transform -translate-x-50% -translate-y-50% w-260 h-60 text-black flex items-center justify-center text-18 pt-20 pb-16 px-40 font-medium border-solid border-0 border-white uppercase bg-cover focus:text-black  text-coffee3 bg-coffee4 hover:scale-110 transition-transform duration-300">
       <?= $boton_conoce_mas['title'] ?>
     </a>
   <?php endif; ?>
