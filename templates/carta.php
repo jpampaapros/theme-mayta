@@ -40,7 +40,7 @@ $preciaso = get_field("precio_maridaje");
 			</div>
 
 			<div
-				class="text-12 md:text-16 text-white md:mb-20 mb-10 font-medium text-center flex flex-col gap-20 md:w-60% w-auto mx-20">
+				class="text-12 md:text-16 text-white md:mb-20 mb-10 font-medium text-center flex flex-col gap-20 md:w-60% w-auto mx-20 md:w-490">
 				<?= $texto ?>
 			</div>
 
